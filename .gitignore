@@ -1,0 +1,30 @@
+# Dependency directories
+vendor/
+
+# dotenv environment variables file
+.env
+
+# Logs
+logs
+*.log
+
+# Cache
+.cache
+
+# Ignore redis binary dump (dump.rdb) files
+*.rdb
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# WordPress core files
+wp/
+
+# Plugins, uploads etc.
+wp-content/*
+!wp-content/plugins/index.php
+!wp-content/themes/

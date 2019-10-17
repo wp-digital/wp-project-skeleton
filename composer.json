@@ -1,0 +1,98 @@
+{
+  "name": "innocode-digital/wp-project-skeleton",
+  "version": "1.0.0",
+  "description": "WordPress project skeleton.",
+  "type": "project",
+  "license": "proprietary",
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-cli-scaffold-theme-command"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-config"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-deferred-loading"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-normalize"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-theme-assets"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:innocode-digital/wp-theme-module"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
+    "humanmade/s3-uploads": "^2.1",
+    "innocode-digital/wp-cli-scaffold-theme-command": "dev-master",
+    "innocode-digital/wp-config": "dev-master",
+    "innocode-digital/wp-deferred-loading": "dev-master",
+    "innocode-digital/wp-normalize": "dev-master",
+    "innocode-digital/wp-theme-assets": "dev-master",
+    "innocode-digital/wp-theme-module": "dev-master",
+    "johnpbloch/wordpress": "*",
+    "lkwdwrd/wp-muplugin-loader": "~1.0.0",
+    "meta-box/mb-revision": "dev-master",
+    "wpackagist-plugin/disable-comments": "*",
+    "wpackagist-plugin/meta-box": "dev-trunk"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",
+        "humanmade/s3-uploads",
+        "vendor:meta-box",
+        "wpackagist-plugin/disable-comments",
+        "wpackagist-plugin/meta-box"
+      ]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@create-env",
+      "@wp-generate-salts"
+    ],
+    "post-root-package-install": [
+      "@create-env"
+    ],
+    "post-create-project-cmd": [
+      "@wp-generate-salts"
+    ],
+    "create-env": "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+    "wp": "vendor/bin/wp",
+    "wp-init": "@wp dotenv init --template=.env.example --with-salts --interactive",
+    "wp-generate-salts": "@wp dotenv salts generate",
+    "wp-scaffold-theme": "@wp scaffold theme ${PWD##*/} --force --skip-env --skip-install-notice"
+  },
+  "authors": [
+    {
+      "name": "Innocode",
+      "email": "post@innocode.no",
+      "homepage": "https://innocode.com/"
+    },
+    {
+      "name": "Viktor Kuliebiakin",
+      "email": "kuliebiakin@gmail.com"
+    }
+  ]
+}
