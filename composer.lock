@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc8c5313d80b88701eff9d926d664db7",
+    "content-hash": "7ab272d0d45d5d34addeee8c2a5053ec",
     "packages": [
         {
             "name": "aaemnnosttv/wp-cli-dotenv-command",
@@ -54,16 +54,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.21",
+            "version": "3.112.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "218d29c4729eb40a668242a53cbfde905fd94792"
+                "reference": "f91e264e3cbf8ced5c93f5f786c9e0f079926749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/218d29c4729eb40a668242a53cbfde905fd94792",
-                "reference": "218d29c4729eb40a668242a53cbfde905fd94792",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f91e264e3cbf8ced5c93f5f786c9e0f079926749",
+                "reference": "f91e264e3cbf8ced5c93f5f786c9e0f079926749",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-10-14T18:08:52+00:00"
+            "time": "2019-10-18T18:08:55+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -662,12 +662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command.git",
-                "reference": "8d12a0904aa54959f3f72f0007281ede5cca77a1"
+                "reference": "d716079c8bf1ac594aa395dd26007591a841ded9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/8d12a0904aa54959f3f72f0007281ede5cca77a1",
-                "reference": "8d12a0904aa54959f3f72f0007281ede5cca77a1",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/d716079c8bf1ac594aa395dd26007591a841ded9",
+                "reference": "d716079c8bf1ac594aa395dd26007591a841ded9",
                 "shasum": ""
             },
             "require": {
@@ -705,7 +705,7 @@
                 "source": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/tree/master",
                 "issues": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/issues"
             },
-            "time": "2019-10-08T13:30:04+00:00"
+            "time": "2019-10-21T14:44:29+00:00"
         },
         {
             "name": "innocode-digital/wp-config",
@@ -2400,7 +2400,59 @@
             "time": "2019-10-09T08:41:57+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/82cd0f854ceca17731d6d019c7098e3755c45060",
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2019-10-16T21:14:26+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
