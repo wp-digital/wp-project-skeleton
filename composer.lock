@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ab272d0d45d5d34addeee8c2a5053ec",
+    "content-hash": "4dd02130069eb87dcc5f8cbe498a8d3d",
     "packages": [
         {
             "name": "aaemnnosttv/wp-cli-dotenv-command",
@@ -690,6 +690,7 @@
                     "scaffold-theme-command.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -701,10 +702,6 @@
             ],
             "description": "Generates starter code for a theme based on Innocode theme skeleton.",
             "homepage": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/issues"
-            },
             "time": "2019-10-21T14:44:29+00:00"
         },
         {
@@ -731,14 +728,11 @@
                     "Innocode\\WPConfig\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Library for WordPress configuration.",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-config/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-config/issues"
-            },
             "time": "2019-10-15T14:13:35+00:00"
         },
         {
@@ -759,14 +753,11 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Defer loading of JavaScript and CSS files.",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-deferred-loading/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-deferred-loading/issues"
-            },
             "time": "2019-09-25T14:05:38+00:00"
         },
         {
@@ -787,14 +778,11 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Disable probably unnecessary WordPress features.",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-normalize/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-normalize/issues"
-            },
             "time": "2019-09-25T14:04:49+00:00"
         },
         {
@@ -803,12 +791,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-theme-assets.git",
-                "reference": "0853b0f5c6ee9ed198bb3e41def7fe3f349e3d24"
+                "reference": "de0fe9787264d4e0b47cc400e376d8b6e6d562e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-theme-assets/zipball/0853b0f5c6ee9ed198bb3e41def7fe3f349e3d24",
-                "reference": "0853b0f5c6ee9ed198bb3e41def7fe3f349e3d24",
+                "url": "https://api.github.com/repos/innocode-digital/wp-theme-assets/zipball/de0fe9787264d4e0b47cc400e376d8b6e6d562e8",
+                "reference": "de0fe9787264d4e0b47cc400e376d8b6e6d562e8",
                 "shasum": ""
             },
             "type": "library",
@@ -817,15 +805,12 @@
                     "Innocode\\WPThemeAssets\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Library for WordPress theme assets files.",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-theme-assets/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-theme-assets/issues"
-            },
-            "time": "2019-09-24T13:22:22+00:00"
+            "time": "2019-10-22T15:04:30+00:00"
         },
         {
             "name": "innocode-digital/wp-theme-module",
@@ -850,14 +835,11 @@
                     "Innocode\\WPThemeModule\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Library for WordPress theme modularization.",
-            "support": {
-                "source": "https://github.com/innocode-digital/wp-theme-module/tree/master",
-                "issues": "https://github.com/innocode-digital/wp-theme-module/issues"
-            },
             "time": "2019-09-24T13:24:06+00:00"
         },
         {
