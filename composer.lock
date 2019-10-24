@@ -663,12 +663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-cdn.git",
-                "reference": "141335ecdd792d92bb175db1011c6d497ed67503"
+                "reference": "de0d7b6f6c90ecea5db40c24fd8088cd4f9fb0b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-cdn/zipball/141335ecdd792d92bb175db1011c6d497ed67503",
-                "reference": "141335ecdd792d92bb175db1011c6d497ed67503",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cdn/zipball/de0d7b6f6c90ecea5db40c24fd8088cd4f9fb0b4",
+                "reference": "de0d7b6f6c90ecea5db40c24fd8088cd4f9fb0b4",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +686,7 @@
                 "GPL-2.0+"
             ],
             "description": "Change all static files URLs to CDN domain.",
-            "time": "2019-10-24T09:39:07+00:00"
+            "time": "2019-10-24T09:44:10+00:00"
         },
         {
             "name": "innocode-digital/wp-cli-scaffold-theme-command",
@@ -694,12 +694,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command.git",
-                "reference": "d716079c8bf1ac594aa395dd26007591a841ded9"
+                "reference": "db6198cb14a6a81d631b1fad1adb637c55b1d36a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/d716079c8bf1ac594aa395dd26007591a841ded9",
-                "reference": "d716079c8bf1ac594aa395dd26007591a841ded9",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/db6198cb14a6a81d631b1fad1adb637c55b1d36a",
+                "reference": "db6198cb14a6a81d631b1fad1adb637c55b1d36a",
                 "shasum": ""
             },
             "require": {
@@ -707,11 +707,11 @@
                 "gettext/gettext": "^4.6",
                 "knplabs/github-api": "^2.10",
                 "php-http/guzzle6-adapter": "^1.1",
-                "wp-cli/scaffold-command": "*"
+                "wp-cli/scaffold-command": "*",
+                "wp-cli/wp-cli": "^2"
             },
             "require-dev": {
-                "behat/behat": "~2.5",
-                "wp-cli/wp-cli": "*"
+                "behat/behat": "~2.5"
             },
             "type": "wp-cli-package",
             "autoload": {
@@ -734,7 +734,7 @@
             ],
             "description": "Generates starter code for a theme based on Innocode theme skeleton.",
             "homepage": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command",
-            "time": "2019-10-21T14:44:29+00:00"
+            "time": "2019-10-24T13:23:17+00:00"
         },
         {
             "name": "innocode-digital/wp-config",

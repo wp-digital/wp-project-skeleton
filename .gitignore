@@ -26,5 +26,7 @@ wp/
 
 # Plugins, uploads etc.
 wp-content/*
+!wp-content/plugins/
+wp-content/plugins/*
 !wp-content/plugins/index.php
 !wp-content/themes/
