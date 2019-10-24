@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dd02130069eb87dcc5f8cbe498a8d3d",
+    "content-hash": "d1ab46b7a849ad0b6d9bb3f6070120f9",
     "packages": [
         {
             "name": "aaemnnosttv/wp-cli-dotenv-command",
@@ -54,16 +54,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.25",
+            "version": "3.112.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f91e264e3cbf8ced5c93f5f786c9e0f079926749"
+                "reference": "eda066813388de5ab8584f06707dacd0b15908b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f91e264e3cbf8ced5c93f5f786c9e0f079926749",
-                "reference": "f91e264e3cbf8ced5c93f5f786c9e0f079926749",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eda066813388de5ab8584f06707dacd0b15908b0",
+                "reference": "eda066813388de5ab8584f06707dacd0b15908b0",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-10-18T18:08:55+00:00"
+            "time": "2019-10-22T18:17:52+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -434,27 +434,28 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.3",
+            "version": "6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+                "reference": "4c1647b1e3788187d80f325b3c49612bd06ace37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4c1647b1e3788187d80f325b3c49612bd06ace37",
+                "reference": "4c1647b1e3788187d80f325b3c49612bd06ace37",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
+                "guzzlehttp/psr7": "^1.6.1",
                 "php": ">=5.5"
             },
             "require-dev": {
                 "ext-curl": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.0"
+                "psr/log": "^1.1"
             },
             "suggest": {
                 "psr/log": "Required for using the Log middleware"
@@ -466,12 +467,12 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
                 "psr-4": {
                     "GuzzleHttp\\": "src/"
-                }
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -495,7 +496,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-22T15:46:56+00:00"
+            "time": "2019-10-23T15:29:22+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -655,6 +656,37 @@
                 "wordpress"
             ],
             "time": "2019-04-16T05:09:44+00:00"
+        },
+        {
+            "name": "innocode-digital/wp-cdn",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/innocode-digital/wp-cdn.git",
+                "reference": "ecf4f4a2cbff7f062c7c8fc827fa497c9b276b48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cdn/zipball/ecf4f4a2cbff7f062c7c8fc827fa497c9b276b48",
+                "reference": "ecf4f4a2cbff7f062c7c8fc827fa497c9b276b48",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=7.1"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Innocode\\CDN\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Change all static files urls to CDN domain.",
+            "time": "2019-10-23T14:23:58+00:00"
         },
         {
             "name": "innocode-digital/wp-cli-scaffold-theme-command",
@@ -2438,6 +2470,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "innocode-digital/wp-cdn": 20,
         "innocode-digital/wp-cli-scaffold-theme-command": 20,
         "innocode-digital/wp-config": 20,
         "innocode-digital/wp-deferred-loading": 20,

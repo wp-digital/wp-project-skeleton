@@ -19,6 +19,7 @@
     "php": ">=7.1",
     "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
     "humanmade/s3-uploads": "^2.1",
+    "innocode-digital/wp-cdn": "dev-master",
     "innocode-digital/wp-cli-scaffold-theme-command": "dev-master",
     "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",
