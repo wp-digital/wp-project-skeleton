@@ -663,12 +663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-cdn.git",
-                "reference": "e2497f0b3720a92e56e778cc1e58377a0c2448a5"
+                "reference": "141335ecdd792d92bb175db1011c6d497ed67503"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-cdn/zipball/e2497f0b3720a92e56e778cc1e58377a0c2448a5",
-                "reference": "e2497f0b3720a92e56e778cc1e58377a0c2448a5",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cdn/zipball/141335ecdd792d92bb175db1011c6d497ed67503",
+                "reference": "141335ecdd792d92bb175db1011c6d497ed67503",
                 "shasum": ""
             },
             "require": {
@@ -685,8 +685,8 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Change all static files urls to CDN domain.",
-            "time": "2019-10-24T09:11:57+00:00"
+            "description": "Change all static files URLs to CDN domain.",
+            "time": "2019-10-24T09:39:07+00:00"
         },
         {
             "name": "innocode-digital/wp-cli-scaffold-theme-command",
