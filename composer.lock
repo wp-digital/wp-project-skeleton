@@ -54,16 +54,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.27",
+            "version": "3.112.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fab980dbc5dc57e9c14a9ce26f55b6ad88b5b979"
+                "reference": "dabae6df3fd53b470da8806d641d05dbb66859da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fab980dbc5dc57e9c14a9ce26f55b6ad88b5b979",
-                "reference": "fab980dbc5dc57e9c14a9ce26f55b6ad88b5b979",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dabae6df3fd53b470da8806d641d05dbb66859da",
+                "reference": "dabae6df3fd53b470da8806d641d05dbb66859da",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-10-23T18:13:05+00:00"
+            "time": "2019-10-24T18:14:24+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -694,18 +694,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command.git",
-                "reference": "db6198cb14a6a81d631b1fad1adb637c55b1d36a"
+                "reference": "873af1260655dc89531fc27e136c0917953e27cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/db6198cb14a6a81d631b1fad1adb637c55b1d36a",
-                "reference": "db6198cb14a6a81d631b1fad1adb637c55b1d36a",
+                "url": "https://api.github.com/repos/innocode-digital/wp-cli-scaffold-theme-command/zipball/873af1260655dc89531fc27e136c0917953e27cd",
+                "reference": "873af1260655dc89531fc27e136c0917953e27cd",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "gettext/gettext": "^4.6",
                 "knplabs/github-api": "^2.10",
+                "localheinz/json-printer": "^2.0",
                 "php-http/guzzle6-adapter": "^1.1",
                 "wp-cli/scaffold-command": "*",
                 "wp-cli/wp-cli": "^2"
@@ -734,7 +735,7 @@
             ],
             "description": "Generates starter code for a theme based on Innocode theme skeleton.",
             "homepage": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command",
-            "time": "2019-10-24T13:23:17+00:00"
+            "time": "2019-10-25T11:23:30+00:00"
         },
         {
             "name": "innocode-digital/wp-config",
@@ -1117,6 +1118,55 @@
                 "wordpress"
             ],
             "time": "2018-04-20T22:09:51+00:00"
+        },
+        {
+            "name": "localheinz/json-printer",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localheinz/json-printer.git",
+                "reference": "86f942599c8f9f922de4e21c2b9b6564c895cb0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localheinz/json-printer/zipball/86f942599c8f9f922de4e21c2b9b6564c895cb0c",
+                "reference": "86f942599c8f9f922de4e21c2b9b6564c895cb0c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "infection/infection": "~0.8.1",
+                "localheinz/php-cs-fixer-config": "~1.14.0",
+                "localheinz/test-util": "0.6.1",
+                "phpbench/phpbench": "~0.14.0",
+                "phpunit/phpunit": "^6.5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Localheinz\\Json\\Printer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com"
+                }
+            ],
+            "description": "Provides a JSON printer, allowing for flexible indentation.",
+            "homepage": "https://github.com/localheinz/json-printer",
+            "keywords": [
+                "formatter",
+                "json",
+                "printer"
+            ],
+            "time": "2018-08-11T23:54:50+00:00"
         },
         {
             "name": "meta-box/mb-revision",
