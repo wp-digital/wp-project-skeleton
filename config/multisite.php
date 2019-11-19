@@ -6,7 +6,7 @@ define( 'WP_ALLOW_MULTISITE', true );
 
 if ( Env::get( 'MULTISITE' ) ) {
     define( 'MULTISITE', true );
-    define( 'SUBDOMAIN_INSTALL', false );
+    define( 'SUBDOMAIN_INSTALL', true );
     define( 'DOMAIN_CURRENT_SITE', Env::get( 'DOMAIN_CURRENT_SITE' ) );
     define( 'PATH_CURRENT_SITE', '/' );
     define( 'SITE_ID_CURRENT_SITE', 1 );
