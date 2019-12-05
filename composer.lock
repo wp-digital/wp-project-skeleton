@@ -629,12 +629,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-github-oauth.git",
-                "reference": "6232de5524e092b830411b0c7c29994c74e45b36"
+                "reference": "9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-github-oauth/zipball/6232de5524e092b830411b0c7c29994c74e45b36",
-                "reference": "6232de5524e092b830411b0c7c29994c74e45b36",
+                "url": "https://api.github.com/repos/innocode-digital/wp-github-oauth/zipball/9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1",
+                "reference": "9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +655,7 @@
                 "GPL-2.0+"
             ],
             "description": "Allows Single Sign On into WordPress through Github OAuth app with restriction by organization and team.",
-            "time": "2019-12-05T11:35:59+00:00"
+            "time": "2019-12-05T15:06:55+00:00"
         },
         {
             "name": "innocode-digital/wp-normalize",
