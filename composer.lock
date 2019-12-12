@@ -573,12 +573,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-config.git",
-                "reference": "fb7be32028bed7192d922c392360123d1b7c122f"
+                "reference": "1e5eb31a4214bad21e880f5c2e420de1abbf32bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/fb7be32028bed7192d922c392360123d1b7c122f",
-                "reference": "fb7be32028bed7192d922c392360123d1b7c122f",
+                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/1e5eb31a4214bad21e880f5c2e420de1abbf32bc",
+                "reference": "1e5eb31a4214bad21e880f5c2e420de1abbf32bc",
                 "shasum": ""
             },
             "require": {
@@ -596,7 +596,7 @@
                 "MIT"
             ],
             "description": "Library for WordPress configuration.",
-            "time": "2019-11-29T16:06:30+00:00"
+            "time": "2019-12-12T19:14:49+00:00"
         },
         {
             "name": "innocode-digital/wp-deferred-loading",
@@ -629,12 +629,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-github-oauth.git",
-                "reference": "9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1"
+                "reference": "8525b3e2c5f3f00fa3c5c7daa26065cfdf3ede26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-github-oauth/zipball/9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1",
-                "reference": "9c0a77aa93414bbd0b08a832a5ce5348feb5f4c1",
+                "url": "https://api.github.com/repos/innocode-digital/wp-github-oauth/zipball/8525b3e2c5f3f00fa3c5c7daa26065cfdf3ede26",
+                "reference": "8525b3e2c5f3f00fa3c5c7daa26065cfdf3ede26",
                 "shasum": ""
             },
             "require": {
@@ -655,7 +655,7 @@
                 "GPL-2.0+"
             ],
             "description": "Allows Single Sign On into WordPress through Github OAuth app with restriction by organization and team.",
-            "time": "2019-12-05T15:06:55+00:00"
+            "time": "2019-12-05T16:25:50+00:00"
         },
         {
             "name": "innocode-digital/wp-normalize",
@@ -2483,6 +2483,7 @@
                 "json",
                 "printer"
             ],
+            "abandoned": "ergebnis/json-printer",
             "time": "2018-08-11T23:54:50+00:00"
         },
         {
