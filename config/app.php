@@ -17,3 +17,5 @@ define( 'DISALLOW_FILE_EDIT', true );
 define( 'DISALLOW_FILE_MODS', true );
 
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
+//define( 'WP_DEFAULT_THEME', '' ); @TODO: set project theme name or remove

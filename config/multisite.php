@@ -1,10 +1,11 @@
 <?php
 
 use Innocode\WPConfig\Env;
+use Innocode\WPConfig\Helpers;
 
 define( 'WP_ALLOW_MULTISITE', true );
 
-if ( Env::get( 'MULTISITE' ) ) {
+if ( Helpers::is_multisite() ) {
     define( 'MULTISITE', true );
     define( 'SUBDOMAIN_INSTALL', true );
     define( 'DOMAIN_CURRENT_SITE', Env::get( 'DOMAIN_CURRENT_SITE' ) );

@@ -1,8 +1,9 @@
 <?php
 
 use Innocode\WPConfig\Env;
+use Innocode\WPConfig\Helpers;
 
-if ( Env::get( 'DEBUG' ) ) {
+if ( Helpers::is_debug_enabled() ) {
     define( 'WP_DEBUG', true );
     define( 'SCRIPT_DEBUG', true );
     define( 'SAVEQUERIES', true );
