@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.135.0",
+            "version": "3.135.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "254f168f90b1846ffb3f70594280e66b9f10a85e"
+                "reference": "59587a4f3fc88b36ce7f2e1a102bfcd7a816b27c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/254f168f90b1846ffb3f70594280e66b9f10a85e",
-                "reference": "254f168f90b1846ffb3f70594280e66b9f10a85e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/59587a4f3fc88b36ce7f2e1a102bfcd7a816b27c",
+                "reference": "59587a4f3fc88b36ce7f2e1a102bfcd7a816b27c",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-04-20T18:16:34+00:00"
+            "time": "2020-04-21T18:14:29+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -700,12 +700,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-mailgun-email-validation.git",
-                "reference": "52b5302e581c9adbea7179e447381ab55bcd846d"
+                "reference": "e9cf6c9317617a3b62d30e0ec7e95c1276809e9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-mailgun-email-validation/zipball/52b5302e581c9adbea7179e447381ab55bcd846d",
-                "reference": "52b5302e581c9adbea7179e447381ab55bcd846d",
+                "url": "https://api.github.com/repos/innocode-digital/wp-mailgun-email-validation/zipball/e9cf6c9317617a3b62d30e0ec7e95c1276809e9f",
+                "reference": "e9cf6c9317617a3b62d30e0ec7e95c1276809e9f",
                 "shasum": ""
             },
             "require": {
@@ -724,7 +724,7 @@
                 "GPL-2.0+"
             ],
             "description": "Validates email address through Mailgun.",
-            "time": "2020-03-31T16:30:33+00:00"
+            "time": "2020-04-21T15:45:27+00:00"
         },
         {
             "name": "innocode-digital/wp-normalize",
