@@ -70,10 +70,7 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-      "@wp-init"
-    ],
-    "post-create-project-cmd": [
+    "post-root-package-install": [
       "@wp-init"
     ],
     "wp": "vendor/bin/wp",
