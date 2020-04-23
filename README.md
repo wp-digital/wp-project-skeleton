@@ -18,7 +18,7 @@ There are few possible options to use this skeleton:
 
 - Alternative way is to clone this repo:
     ```
-    git clone git@github.com:innocode-digital/wp-project-skeleton.git new-project-name
+    git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
     ```
   
 Find `@TODO: ...` in code and replace with needed settings. 
