@@ -39,7 +39,8 @@
     "meta-box/mb-revision": "dev-master",
     "wpackagist-plugin/disable-comments": "*",
     "wpackagist-plugin/mailgun": "*",
-    "wpackagist-plugin/meta-box": "dev-trunk"
+    "wpackagist-plugin/meta-box": "dev-trunk",
+    "wpackagist-plugin/wordpress-seo": "*"
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
