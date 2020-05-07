@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.137.1",
+            "version": "3.137.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "935060ae3d64f2bfeab7a6ba46bebe525047446c"
+                "reference": "0bed146e6336ca1260e937fce2f4931681ceb3ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/935060ae3d64f2bfeab7a6ba46bebe525047446c",
-                "reference": "935060ae3d64f2bfeab7a6ba46bebe525047446c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0bed146e6336ca1260e937fce2f4931681ceb3ce",
+                "reference": "0bed146e6336ca1260e937fce2f4931681ceb3ce",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-01T18:13:22+00:00"
+            "time": "2020-05-06T18:19:09+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -610,12 +610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-deferred-loading.git",
-                "reference": "240f25f655d640ba352f4a7d15fb004bf630551f"
+                "reference": "db95fb314d053d813a97f2365fbf0360e2fcda4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-deferred-loading/zipball/240f25f655d640ba352f4a7d15fb004bf630551f",
-                "reference": "240f25f655d640ba352f4a7d15fb004bf630551f",
+                "url": "https://api.github.com/repos/innocode-digital/wp-deferred-loading/zipball/db95fb314d053d813a97f2365fbf0360e2fcda4e",
+                "reference": "db95fb314d053d813a97f2365fbf0360e2fcda4e",
                 "shasum": ""
             },
             "require": {
@@ -627,7 +627,7 @@
                 "GPL-2.0+"
             ],
             "description": "Defer loading of JavaScript and CSS files.",
-            "time": "2019-09-25T14:05:38+00:00"
+            "time": "2020-05-07T11:23:10+00:00"
         },
         {
             "name": "innocode-digital/wp-github-oauth",
