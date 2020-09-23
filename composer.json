@@ -4,7 +4,8 @@
   "type": "project",
   "license": "proprietary",
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "dropin-installer": "copy"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -39,6 +40,7 @@
     "wpackagist-plugin/disable-comments": "*",
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/meta-box": "dev-trunk",
+    "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/wordpress-seo": "*"
   },
   "require-dev": {
@@ -48,6 +50,10 @@
   "extra": {
     "wordpress-install-dir": "wp",
     "dropin-paths": {
+      "wp-content/": [
+        "package:wpackagist-plugin/redis-cache:includes/object-cache.php",
+        "type:wordpress-dropin"
+      ],
       "wp-content/languages/": [
         "vendor:koodimonni-language"
       ],
@@ -65,7 +71,8 @@
         "vendor:meta-box",
         "wpackagist-plugin/disable-comments",
         "wpackagist-plugin/mailgun",
-        "wpackagist-plugin/meta-box"
+        "wpackagist-plugin/meta-box",
+        "wpackagist-plugin/redis-cache"
       ]
     }
   },
