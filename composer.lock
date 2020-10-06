@@ -590,12 +590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-config.git",
-                "reference": "865bef96d566d51981341e2d8966e06a89bc01e8"
+                "reference": "aa1b0c52854b638f56aa5c955f46c8bea6f222a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/865bef96d566d51981341e2d8966e06a89bc01e8",
-                "reference": "865bef96d566d51981341e2d8966e06a89bc01e8",
+                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/aa1b0c52854b638f56aa5c955f46c8bea6f222a9",
+                "reference": "aa1b0c52854b638f56aa5c955f46c8bea6f222a9",
                 "shasum": ""
             },
             "require": {
@@ -613,7 +613,7 @@
                 "MIT"
             ],
             "description": "Library for WordPress configuration.",
-            "time": "2020-10-05T19:28:11+00:00"
+            "time": "2020-10-06T09:06:26+00:00"
         },
         {
             "name": "innocode-digital/wp-deferred-loading",
