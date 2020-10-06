@@ -41,7 +41,8 @@
     "wpackagist-plugin/mailgun": "*",
     "wpackagist-plugin/meta-box": "dev-trunk",
     "wpackagist-plugin/redis-cache": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wp-crontrol": "*"
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
@@ -72,7 +73,8 @@
         "wpackagist-plugin/disable-comments",
         "wpackagist-plugin/mailgun",
         "wpackagist-plugin/meta-box",
-        "wpackagist-plugin/redis-cache"
+        "wpackagist-plugin/redis-cache",
+        "wpackagist-plugin/wp-crontrol"
       ]
     }
   },
