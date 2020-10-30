@@ -20,7 +20,8 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.2",
+    "boxuk/wp-muplugin-loader": "^1.3",
     "humanmade/s3-uploads": "^2.1",
     "innocode-digital/wp-cdn": "dev-master",
     "innocode-digital/wp-config": "dev-master",
@@ -33,13 +34,12 @@
     "innocode-digital/wp-theme-assets": "dev-master",
     "innocode-digital/wp-theme-module": "dev-master",
     "johnpbloch/wordpress": "*",
-    "koodimonni/composer-dropin-installer": "*",
     "koodimonni-language/core-nb_no": "*",
-    "lkwdwrd/wp-muplugin-loader": "~1.0.0",
+    "koodimonni/composer-dropin-installer": "*",
     "meta-box/mb-revision": "dev-master",
     "wpackagist-plugin/disable-comments": "*",
     "wpackagist-plugin/mailgun": "*",
-    "wpackagist-plugin/meta-box": "dev-trunk",
+    "wpackagist-plugin/meta-box": "*",
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/wp-crontrol": "*"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3b68775b896c11637e301fee4e05942",
+    "content-hash": "f98bdaa207e13023a6ca2ebdca1c2692",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -89,7 +89,71 @@
                 "s3",
                 "sdk"
             ],
+            "support": {
+                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+                "issues": "https://github.com/aws/aws-sdk-php/issues",
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.158.17"
+            },
             "time": "2020-10-29T18:16:24+00:00"
+        },
+        {
+            "name": "boxuk/wp-muplugin-loader",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boxuk/wp-muplugin-loader.git",
+                "reference": "ba3f1b0c385a2d06a4b29a02c1b32c059a1e1c01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boxuk/wp-muplugin-loader/zipball/ba3f1b0c385a2d06a4b29a02c1b32c059a1e1c01",
+                "reference": "ba3f1b0c385a2d06a4b29a02c1b32c059a1e1c01",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4",
+                "codeclimate/php-test-reporter": "^0.4.4",
+                "composer/composer": "^1.10 || ^2.0",
+                "mockery/mockery": "~1.3.3",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Box UK",
+                    "email": "developers@boxuk.com"
+                },
+                {
+                    "name": "Luke Woodward",
+                    "email": "woodward.lucas@gmail.com"
+                }
+            ],
+            "description": "A drop-in MU Plugin loader for WordPress",
+            "keywords": [
+                "loader",
+                "muplugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/boxuk/wp-muplugin-loader/tree/1.3.0"
+            },
+            "time": "2020-10-27T09:52:43+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -141,6 +205,10 @@
                 "stream_filter_append",
                 "stream_filter_register"
             ],
+            "support": {
+                "issues": "https://github.com/clue/php-stream-filter/issues",
+                "source": "https://github.com/clue/php-stream-filter/tree/v1.5.0"
+            },
             "funding": [
                 {
                     "url": "https://clue.engineering/support",
@@ -278,6 +346,20 @@
                 "zend",
                 "zikula"
             ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
@@ -325,6 +407,11 @@
                 "recaptcha",
                 "spam"
             ],
+            "support": {
+                "forum": "https://groups.google.com/forum/#!forum/recaptcha",
+                "issues": "https://github.com/google/recaptcha/issues",
+                "source": "https://github.com/google/recaptcha"
+            },
             "time": "2020-03-31T17:50:54+00:00"
         },
         {
@@ -392,6 +479,10 @@
                 "rest",
                 "web service"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -443,6 +534,10 @@
             "keywords": [
                 "promise"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.4.0"
+            },
             "time": "2020-09-30T07:37:28+00:00"
         },
         {
@@ -514,6 +609,10 @@
                 "uri",
                 "url"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
+            },
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
@@ -551,6 +650,10 @@
             "keywords": [
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/humanmade/s3-uploads/issues",
+                "source": "https://github.com/humanmade/s3-uploads"
+            },
             "time": "2020-07-08T12:09:08+00:00"
         },
         {
@@ -571,6 +674,7 @@
                 "composer/installers": "~1.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "autoload": {
                 "psr-4": {
@@ -582,6 +686,9 @@
                 "GPL-2.0+"
             ],
             "description": "Change all static files URLs to CDN domain.",
+            "support": {
+                "source": "https://github.com/innocode-digital/wp-cdn/tree/3.4.1"
+            },
             "time": "2020-05-12T12:20:38+00:00"
         },
         {
@@ -602,6 +709,7 @@
                 "php": ">=7.1",
                 "vlucas/phpdotenv": "^4.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -613,6 +721,10 @@
                 "MIT"
             ],
             "description": "Library for WordPress configuration.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-config/issues",
+                "source": "https://github.com/innocode-digital/wp-config/tree/1.6.3"
+            },
             "time": "2020-10-28T10:58:43+00:00"
         },
         {
@@ -632,12 +744,17 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Defer loading of JavaScript and CSS files.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-deferred-loading/issues",
+                "source": "https://github.com/innocode-digital/wp-deferred-loading/tree/1.4.1"
+            },
             "time": "2020-06-24T12:07:24+00:00"
         },
         {
@@ -661,6 +778,7 @@
                 "php": ">=7.1",
                 "php-http/guzzle6-adapter": "^1.1"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "autoload": {
                 "psr-4": {
@@ -672,6 +790,10 @@
                 "GPL-2.0+"
             ],
             "description": "Allows Single Sign On into WordPress through Github OAuth app with restriction by organization and team.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-github-oauth/issues",
+                "source": "https://github.com/innocode-digital/wp-github-oauth/tree/v1.2.3"
+            },
             "time": "2019-12-05T16:25:50+00:00"
         },
         {
@@ -692,6 +814,7 @@
                 "composer/installers": "~1.0",
                 "php": ">=7.0"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "autoload": {
                 "psr-4": {
@@ -703,6 +826,10 @@
                 "GPL-2.0+"
             ],
             "description": "Overrides mail From headers, adds check of mail functionality.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-mail-helpers/issues",
+                "source": "https://github.com/innocode-digital/wp-mail-helpers/tree/1.2.1"
+            },
             "time": "2020-04-27T16:56:57+00:00"
         },
         {
@@ -724,6 +851,7 @@
                 "ext-json": "*",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "autoload": {
                 "psr-4": {
@@ -735,6 +863,10 @@
                 "GPL-2.0+"
             ],
             "description": "Validates email address through Mailgun.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-mailgun-email-validation/issues",
+                "source": "https://github.com/innocode-digital/wp-mailgun-email-validation/tree/master"
+            },
             "time": "2020-06-02T09:08:54+00:00"
         },
         {
@@ -754,12 +886,17 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Disables probably unnecessary WordPress features, and a little changes behaviour.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-normalize/issues",
+                "source": "https://github.com/innocode-digital/wp-normalize/tree/1.4.0"
+            },
             "time": "2020-06-17T14:01:24+00:00"
         },
         {
@@ -782,6 +919,7 @@
                 "php": ">=7.1",
                 "vectorface/whip": "^0.3.2"
             },
+            "default-branch": true,
             "type": "wordpress-muplugin",
             "autoload": {
                 "psr-4": {
@@ -793,6 +931,10 @@
                 "GPL-2.0+"
             ],
             "description": "Helps to protect website with Google reCAPTCHA v3.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-recaptcha/issues",
+                "source": "https://github.com/innocode-digital/wp-recaptcha/tree/2.3.1"
+            },
             "time": "2020-10-20T07:46:42+00:00"
         },
         {
@@ -809,6 +951,7 @@
                 "reference": "f835f97fcc236ad0ecf9965349839f6e70262124",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -820,6 +963,10 @@
                 "MIT"
             ],
             "description": "Library for WordPress theme assets files.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-theme-assets/issues",
+                "source": "https://github.com/innocode-digital/wp-theme-assets/tree/1.1.0"
+            },
             "time": "2020-05-12T13:06:47+00:00"
         },
         {
@@ -839,6 +986,7 @@
             "require": {
                 "php": ">=7.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -850,6 +998,10 @@
                 "MIT"
             ],
             "description": "Library for WordPress theme modularization.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-theme-module/issues",
+                "source": "https://github.com/innocode-digital/wp-theme-module/tree/v1.0.0"
+            },
             "time": "2019-09-24T13:24:06+00:00"
         },
         {
@@ -889,6 +1041,13 @@
                 "cms",
                 "wordpress"
             ],
+            "support": {
+                "forum": "http://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "http://core.trac.wordpress.org/",
+                "source": "http://core.trac.wordpress.org/browser",
+                "wiki": "http://codex.wordpress.org/"
+            },
             "time": "2020-10-29T20:32:34+00:00"
         },
         {
@@ -930,6 +1089,13 @@
                 "cms",
                 "wordpress"
             ],
+            "support": {
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "source": "https://core.trac.wordpress.org/browser",
+                "wiki": "https://codex.wordpress.org/"
+            },
             "time": "2020-10-29T20:32:28+00:00"
         },
         {
@@ -980,6 +1146,10 @@
             "keywords": [
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/johnpbloch/wordpress-core-installer/issues",
+                "source": "https://github.com/johnpbloch/wordpress-core-installer/tree/master"
+            },
             "time": "2020-04-16T21:44:57+00:00"
         },
         {
@@ -1049,6 +1219,10 @@
                 "gist",
                 "github"
             ],
+            "support": {
+                "issues": "https://github.com/KnpLabs/php-github-api/issues",
+                "source": "https://github.com/KnpLabs/php-github-api/tree/2.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/acrobat",
@@ -1118,6 +1292,10 @@
                 }
             ],
             "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
+            "support": {
+                "issues": "https://github.com/Koodimonni/Composer-Dropin-Installer/issues",
+                "source": "https://github.com/Koodimonni/Composer-Dropin-Installer/tree/master"
+            },
             "time": "2020-08-17T07:41:05+00:00"
         },
         {
@@ -1184,6 +1362,10 @@
                 "oauth2",
                 "single sign on"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth2-client/issues",
+                "source": "https://github.com/thephpleague/oauth2-client/tree/2.6.0"
+            },
             "time": "2020-10-28T02:03:40+00:00"
         },
         {
@@ -1239,56 +1421,11 @@
                 "oauth",
                 "oauth2"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/oauth2-github/issues",
+                "source": "https://github.com/thephpleague/oauth2-github/tree/master"
+            },
             "time": "2017-01-26T01:14:51+00:00"
-        },
-        {
-            "name": "lkwdwrd/wp-muplugin-loader",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lkwdwrd/wp-muplugin-loader.git",
-                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lkwdwrd/wp-muplugin-loader/zipball/aed228e0037fc243c116a0d2d69076db5ed7d96b",
-                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "10up/wp_mock": "dev-dev",
-                "codeclimate/php-test-reporter": "^0.4.4",
-                "phpunit/phpunit": "^7.1.4"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luke Woodward",
-                    "email": "woodward.lucas@gmail.com"
-                }
-            ],
-            "description": "A drop-in MU Plugin loader for WordPress",
-            "keywords": [
-                "loader",
-                "muplugin",
-                "wordpress"
-            ],
-            "time": "2018-04-20T22:09:51+00:00"
         },
         {
             "name": "meta-box/mb-revision",
@@ -1357,6 +1494,10 @@
                 "json",
                 "jsonpath"
             ],
+            "support": {
+                "issues": "https://github.com/jmespath/jmespath.php/issues",
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.6.0"
+            },
             "time": "2020-07-31T21:01:56+00:00"
         },
         {
@@ -1402,6 +1543,11 @@
                 "pseudorandom",
                 "random"
             ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
             "time": "2020-10-15T08:29:30+00:00"
         },
         {
@@ -1457,6 +1603,10 @@
                 "httplug",
                 "plugin"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/cache-plugin/issues",
+                "source": "https://github.com/php-http/cache-plugin/tree/master"
+            },
             "time": "2020-07-13T10:55:38+00:00"
         },
         {
@@ -1518,6 +1668,10 @@
                 "http",
                 "httplug"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/client-common/issues",
+                "source": "https://github.com/php-http/client-common/tree/1.x"
+            },
             "time": "2019-11-18T08:54:36+00:00"
         },
         {
@@ -1583,6 +1737,10 @@
                 "message",
                 "psr7"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/discovery/issues",
+                "source": "https://github.com/php-http/discovery/tree/1.12.0"
+            },
             "time": "2020-09-22T13:31:04+00:00"
         },
         {
@@ -1643,6 +1801,10 @@
                 "Guzzle",
                 "http"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/guzzle6-adapter/issues",
+                "source": "https://github.com/php-http/guzzle6-adapter/tree/master"
+            },
             "time": "2016-05-10T06:13:32+00:00"
         },
         {
@@ -1699,6 +1861,10 @@
                 "client",
                 "http"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/httplug/issues",
+                "source": "https://github.com/php-http/httplug/tree/master"
+            },
             "time": "2016-08-31T08:30:17+00:00"
         },
         {
@@ -1772,6 +1938,10 @@
                 "message",
                 "psr-7"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/message/issues",
+                "source": "https://github.com/php-http/message/tree/1.9.1"
+            },
             "time": "2020-10-13T06:21:08+00:00"
         },
         {
@@ -1822,6 +1992,10 @@
                 "stream",
                 "uri"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
             "time": "2015-12-19T14:08:53+00:00"
         },
         {
@@ -1875,6 +2049,10 @@
             "keywords": [
                 "promise"
             ],
+            "support": {
+                "issues": "https://github.com/php-http/promise/issues",
+                "source": "https://github.com/php-http/promise/tree/1.1.0"
+            },
             "time": "2020-07-07T09:29:14+00:00"
         },
         {
@@ -1930,6 +2108,10 @@
                 "php",
                 "type"
             ],
+            "support": {
+                "issues": "https://github.com/schmittjoh/php-option/issues",
+                "source": "https://github.com/schmittjoh/php-option/tree/1.7.5"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -1986,6 +2168,9 @@
                 "psr",
                 "psr-6"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
@@ -2036,6 +2221,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -2076,24 +2264,97 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "symfony/options-resolver",
-            "version": "v4.4.16",
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "157a252222251310fe50c71012b4e72f01325850"
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/157a252222251310fe50c71012b4e72f01325850",
-                "reference": "157a252222251310fe50c71012b4e72f01325850",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5fa56b4074d1ae755beb55617ddafe6f5d78f665",
+                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.3"
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v5.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "c6a02905e4ffc7a1498e8ee019db2b477cd1cc02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/c6a02905e4ffc7a1498e8ee019db2b477cd1cc02",
+                "reference": "c6a02905e4ffc7a1498e8ee019db2b477cd1cc02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.15"
             },
             "type": "library",
             "autoload": {
@@ -2125,6 +2386,9 @@
                 "configuration",
                 "options"
             ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v5.1.8"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2139,7 +2403,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T11:50:19+00:00"
+            "time": "2020-10-24T12:01:57+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2201,6 +2465,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2285,6 +2552,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2366,6 +2636,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2443,6 +2716,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2516,6 +2792,92 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2586,6 +2948,10 @@
                 "cdn",
                 "cloudflare"
             ],
+            "support": {
+                "issues": "https://github.com/Vectorface/whip/issues",
+                "source": "https://github.com/Vectorface/whip"
+            },
             "time": "2017-10-30T14:05:31+00:00"
         },
         {
@@ -2650,6 +3016,10 @@
                 "env",
                 "environment"
             ],
+            "support": {
+                "issues": "https://github.com/vlucas/phpdotenv/issues",
+                "source": "https://github.com/vlucas/phpdotenv/tree/4.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -2700,22 +3070,21 @@
         },
         {
             "name": "wpackagist-plugin/meta-box",
-            "version": "dev-trunk",
+            "version": "5.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/meta-box/",
-                "reference": "trunk"
+                "reference": "tags/5.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/meta-box.zip?timestamp=1572603347"
+                "url": "https://downloads.wordpress.org/plugin/meta-box.5.3.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/meta-box/",
-            "time": "2019-11-01T10:15:47+00:00"
+            "homepage": "https://wordpress.org/plugins/meta-box/"
         },
         {
             "name": "wpackagist-plugin/redis-cache",
@@ -2817,6 +3186,10 @@
             ],
             "description": "Dotenv commands for WP-CLI",
             "homepage": "https://aaemnnost.tv/wp-cli-commands/dotenv/",
+            "support": {
+                "issues": "https://github.com/aaemnnosttv/wp-cli-dotenv-command/issues",
+                "source": "https://github.com/aaemnnosttv/wp-cli-dotenv-command/tree/master"
+            },
             "time": "2018-05-21T06:56:59+00:00"
         },
         {
@@ -2879,6 +3252,11 @@
                 "po",
                 "translation"
             ],
+            "support": {
+                "email": "oom@oscarotero.com",
+                "issues": "https://github.com/oscarotero/Gettext/issues",
+                "source": "https://github.com/php-gettext/Gettext/tree/v4.8.2"
+            },
             "time": "2019-12-02T10:21:14+00:00"
         },
         {
@@ -2940,6 +3318,10 @@
                 "translations",
                 "unicode"
             ],
+            "support": {
+                "issues": "https://github.com/php-gettext/Languages/issues",
+                "source": "https://github.com/php-gettext/Languages/tree/2.6.0"
+            },
             "time": "2019-11-13T10:30:21+00:00"
         },
         {
@@ -2968,6 +3350,7 @@
             "require-dev": {
                 "behat/behat": "~2.5"
             },
+            "default-branch": true,
             "type": "wp-cli-package",
             "autoload": {
                 "psr-4": {
@@ -2989,6 +3372,10 @@
             ],
             "description": "Generates starter code for a theme based on Innocode theme skeleton.",
             "homepage": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/issues",
+                "source": "https://github.com/innocode-digital/wp-cli-scaffold-theme-command/tree/v1.5.1"
+            },
             "time": "2019-10-25T11:23:30+00:00"
         },
         {
@@ -3038,6 +3425,10 @@
                 "json",
                 "printer"
             ],
+            "support": {
+                "issues": "https://github.com/localheinz/json-printer/issues",
+                "source": "https://github.com/localheinz/json-printer"
+            },
             "abandoned": "ergebnis/json-printer",
             "time": "2018-08-11T23:54:50+00:00"
         },
@@ -3085,6 +3476,10 @@
                 "mustache",
                 "templating"
             ],
+            "support": {
+                "issues": "https://github.com/bobthecow/mustache.php/issues",
+                "source": "https://github.com/bobthecow/mustache.php/tree/master"
+            },
             "time": "2019-11-23T21:40:31+00:00"
         },
         {
@@ -3134,24 +3529,28 @@
                 "iri",
                 "sockets"
             ],
+            "support": {
+                "issues": "https://github.com/rmccue/Requests/issues",
+                "source": "https://github.com/rmccue/Requests/tree/master"
+            },
             "time": "2016-10-13T00:11:37+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.16",
+            "version": "v5.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "26f63b8d4e92f2eecd90f6791a563ebb001abe31"
+                "reference": "e70eb5a69c2ff61ea135a13d2266e8914a67b3a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/26f63b8d4e92f2eecd90f6791a563ebb001abe31",
-                "reference": "26f63b8d4e92f2eecd90f6791a563ebb001abe31",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e70eb5a69c2ff61ea135a13d2266e8914a67b3a0",
+                "reference": "e70eb5a69c2ff61ea135a13d2266e8914a67b3a0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.3"
+                "php": ">=7.2.5"
             },
             "type": "library",
             "autoload": {
@@ -3178,6 +3577,9 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v5.1.8"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3192,7 +3594,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T11:50:19+00:00"
+            "time": "2020-10-24T12:01:57+00:00"
         },
         {
             "name": "wp-cli/mustangostang-spyc",
@@ -3240,6 +3642,9 @@
             ],
             "description": "A simple YAML loader/dumper class for PHP (WP-CLI fork)",
             "homepage": "https://github.com/mustangostang/spyc/",
+            "support": {
+                "source": "https://github.com/wp-cli/spyc/tree/autoload"
+            },
             "time": "2017-04-25T11:26:20+00:00"
         },
         {
@@ -3290,6 +3695,10 @@
                 "cli",
                 "console"
             ],
+            "support": {
+                "issues": "https://github.com/wp-cli/php-cli-tools/issues",
+                "source": "https://github.com/wp-cli/php-cli-tools/tree/master"
+            },
             "time": "2018-09-04T13:28:00+00:00"
         },
         {
@@ -3353,6 +3762,10 @@
             ],
             "description": "Generates code for post types, taxonomies, blocks, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
+            "support": {
+                "issues": "https://github.com/wp-cli/scaffold-command/issues",
+                "source": "https://github.com/wp-cli/scaffold-command/tree/master"
+            },
             "time": "2019-11-25T13:26:31+00:00"
         },
         {
@@ -3415,6 +3828,11 @@
                 "cli",
                 "wordpress"
             ],
+            "support": {
+                "docs": "https://make.wordpress.org/cli/handbook/",
+                "issues": "https://github.com/wp-cli/wp-cli/issues",
+                "source": "https://github.com/wp-cli/wp-cli"
+            },
             "time": "2020-02-18T08:15:37+00:00"
         }
     ],
@@ -3432,14 +3850,13 @@
         "innocode-digital/wp-theme-assets": 20,
         "innocode-digital/wp-theme-module": 20,
         "meta-box/mb-revision": 20,
-        "wpackagist-plugin/meta-box": 20,
         "innocode-digital/wp-cli-scaffold-theme-command": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
