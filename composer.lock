@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.158.17",
+            "version": "3.159.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "086a504647f45d1166d18af2345684893ef43875"
+                "reference": "56785395913fe4253202d0da9055c2da87ac0a59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/086a504647f45d1166d18af2345684893ef43875",
-                "reference": "086a504647f45d1166d18af2345684893ef43875",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/56785395913fe4253202d0da9055c2da87ac0a59",
+                "reference": "56785395913fe4253202d0da9055c2da87ac0a59",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.158.17"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.159.0"
             },
-            "time": "2020-10-29T18:16:24+00:00"
+            "time": "2020-11-09T17:18:56+00:00"
         },
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -1006,20 +1006,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.5.2",
+            "version": "5.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "0bdf3c984207e5c1fd37bb911f907fbdbe446f93"
+                "reference": "f706595a0be04446e1c6c4ff984be414d1a3064b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/0bdf3c984207e5c1fd37bb911f907fbdbe446f93",
-                "reference": "0bdf3c984207e5c1fd37bb911f907fbdbe446f93",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f706595a0be04446e1c6c4ff984be414d1a3064b",
+                "reference": "f706595a0be04446e1c6c4ff984be414d1a3064b",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.5.2",
+                "johnpbloch/wordpress-core": "5.5.3",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -1048,20 +1048,20 @@
                 "source": "http://core.trac.wordpress.org/browser",
                 "wiki": "http://codex.wordpress.org/"
             },
-            "time": "2020-10-29T20:32:34+00:00"
+            "time": "2020-10-30T20:48:17+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.5.2",
+            "version": "5.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "6d75bf6a9c4d1e0b7558976fbedd80b4ef30779b"
+                "reference": "6f25ae53f3d4058f8dd702c097d5a4a45667af61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/6d75bf6a9c4d1e0b7558976fbedd80b4ef30779b",
-                "reference": "6d75bf6a9c4d1e0b7558976fbedd80b4ef30779b",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/6f25ae53f3d4058f8dd702c097d5a4a45667af61",
+                "reference": "6f25ae53f3d4058f8dd702c097d5a4a45667af61",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1069,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.5.2"
+                "wordpress/core-implementation": "5.5.3"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1096,7 +1096,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2020-10-29T20:32:28+00:00"
+            "time": "2020-10-30T20:48:12+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1154,16 +1154,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "v2.15.0",
+            "version": "v2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "03445f26843ec44319fe1f3c2a8ef6fcd545a154"
+                "reference": "e1c5dca1b7d2abeb218a041c29e522d62f7c6a7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/03445f26843ec44319fe1f3c2a8ef6fcd545a154",
-                "reference": "03445f26843ec44319fe1f3c2a8ef6fcd545a154",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/e1c5dca1b7d2abeb218a041c29e522d62f7c6a7f",
+                "reference": "e1c5dca1b7d2abeb218a041c29e522d62f7c6a7f",
                 "shasum": ""
             },
             "require": {
@@ -1221,7 +1221,7 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/php-github-api/issues",
-                "source": "https://github.com/KnpLabs/php-github-api/tree/2.x"
+                "source": "https://github.com/KnpLabs/php-github-api/tree/v2.16.0"
             },
             "funding": [
                 {
@@ -1229,7 +1229,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-11T16:45:45+00:00"
+            "time": "2020-11-08T13:42:56+00:00"
         },
         {
             "name": "koodimonni-language/core-nb_no",
@@ -3106,15 +3106,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "15.2",
+            "version": "15.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/15.2"
+                "reference": "tags/15.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.15.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.15.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
