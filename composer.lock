@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.1",
+            "version": "3.176.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e"
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e",
-                "reference": "86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.2"
             },
-            "time": "2021-03-26T03:59:54+00:00"
+            "time": "2021-03-26T18:16:22+00:00"
         },
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -991,16 +991,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-normalize.git",
-                "reference": "18daa69c26dbd62889a4720da94b46527db46240"
+                "reference": "b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/18daa69c26dbd62889a4720da94b46527db46240",
-                "reference": "18daa69c26dbd62889a4720da94b46527db46240",
+                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d",
+                "reference": "b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0",
+                "ext-json": "*"
             },
             "default-branch": true,
             "type": "wordpress-muplugin",
@@ -1011,9 +1012,9 @@
             "description": "Disables probably unnecessary WordPress features, and a little changes behaviour.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-normalize/issues",
-                "source": "https://github.com/innocode-digital/wp-normalize/tree/1.4.0"
+                "source": "https://github.com/innocode-digital/wp-normalize/tree/2.1.0"
             },
-            "time": "2020-06-17T14:01:24+00:00"
+            "time": "2021-03-29T17:11:19+00:00"
         },
         {
             "name": "innocode-digital/wp-recaptcha",
@@ -1317,16 +1318,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "v2.19.1",
+            "version": "v2.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "90e695e8978d510a83cc23065c3c566e39c1421a"
+                "reference": "ad3b8e6084729adff5c804bc7058afc57ba04224"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/90e695e8978d510a83cc23065c3c566e39c1421a",
-                "reference": "90e695e8978d510a83cc23065c3c566e39c1421a",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/ad3b8e6084729adff5c804bc7058afc57ba04224",
+                "reference": "ad3b8e6084729adff5c804bc7058afc57ba04224",
                 "shasum": ""
             },
             "require": {
@@ -1351,7 +1352,7 @@
             "extra": {
                 "branch-alias": {
                     "dev-2.x": "2.19.x-dev",
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
@@ -1384,7 +1385,7 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/php-github-api/issues",
-                "source": "https://github.com/KnpLabs/php-github-api/tree/v2.19.1"
+                "source": "https://github.com/KnpLabs/php-github-api/tree/v2.19.2"
             },
             "funding": [
                 {
@@ -1392,7 +1393,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-11T20:11:17+00:00"
+            "time": "2021-03-28T13:11:08+00:00"
         },
         {
             "name": "koodimonni-language/core-nb_no",
