@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.2",
+            "version": "3.176.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80"
+                "reference": "a4f0bbeff965f67ca4dbfccfa2865de611f14c30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
-                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a4f0bbeff965f67ca4dbfccfa2865de611f14c30",
+                "reference": "a4f0bbeff965f67ca4dbfccfa2865de611f14c30",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.3"
             },
-            "time": "2021-03-26T18:16:22+00:00"
+            "time": "2021-03-29T18:16:38+00:00"
         },
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -991,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-normalize.git",
-                "reference": "b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d"
+                "reference": "d66a66b1a5151446b0b7326dfdd4a405f6cb1747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d",
-                "reference": "b034fa63a373ed5d9c42ecc0b0ae38ea70bd0b7d",
+                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/d66a66b1a5151446b0b7326dfdd4a405f6cb1747",
+                "reference": "d66a66b1a5151446b0b7326dfdd4a405f6cb1747",
                 "shasum": ""
             },
             "require": {
@@ -1012,9 +1012,9 @@
             "description": "Disables probably unnecessary WordPress features, and a little changes behaviour.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-normalize/issues",
-                "source": "https://github.com/innocode-digital/wp-normalize/tree/2.1.0"
+                "source": "https://github.com/innocode-digital/wp-normalize/tree/master"
             },
-            "time": "2021-03-29T17:11:19+00:00"
+            "time": "2021-03-30T10:16:40+00:00"
         },
         {
             "name": "innocode-digital/wp-recaptcha",
