@@ -991,17 +991,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-normalize.git",
-                "reference": "d66a66b1a5151446b0b7326dfdd4a405f6cb1747"
+                "reference": "037a74aeeb847805e6b41189e2b685cc265e52d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/d66a66b1a5151446b0b7326dfdd4a405f6cb1747",
-                "reference": "d66a66b1a5151446b0b7326dfdd4a405f6cb1747",
+                "url": "https://api.github.com/repos/innocode-digital/wp-normalize/zipball/037a74aeeb847805e6b41189e2b685cc265e52d3",
+                "reference": "037a74aeeb847805e6b41189e2b685cc265e52d3",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "ext-json": "*"
+                "ext-json": "*",
+                "php": ">=7.1"
             },
             "default-branch": true,
             "type": "wordpress-muplugin",
@@ -1012,9 +1013,9 @@
             "description": "Disables probably unnecessary WordPress features, and a little changes behaviour.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-normalize/issues",
-                "source": "https://github.com/innocode-digital/wp-normalize/tree/master"
+                "source": "https://github.com/innocode-digital/wp-normalize/tree/2.2.0"
             },
-            "time": "2021-03-30T10:16:40+00:00"
+            "time": "2021-03-30T10:25:21+00:00"
         },
         {
             "name": "innocode-digital/wp-recaptcha",
