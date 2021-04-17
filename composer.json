@@ -53,24 +53,24 @@
     "innocode-digital/wp-cli-scaffold-theme-command": "dev-master"
   },
   "extra": {
-    "wordpress-install-dir": "wp",
+    "wordpress-install-dir": "public/wp",
     "dropin-paths": {
-      "wp-content/": [
+      "public/wp-content/": [
         "package:wpackagist-plugin/redis-cache:includes/object-cache.php",
         "type:wordpress-dropin"
       ],
-      "wp-content/languages/": [
+      "public/wp-content/languages/": [
         "vendor:koodimonni-language"
       ],
-      "wp-content/languages/plugins/": [
+      "public/wp-content/languages/plugins/": [
         "vendor:koodimonni-plugin-language"
       ],
-      "wp-content/languages/themes/": [
+      "public/wp-content/languages/themes/": [
         "vendor:koodimonni-theme-language"
       ]
     },
     "installer-paths": {
-      "wp-content/mu-plugins/{$name}/": [
+      "public/wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
         "humanmade/s3-uploads",
         "vendor:meta-box",
@@ -80,7 +80,9 @@
         "wpackagist-plugin/meta-box",
         "wpackagist-plugin/redis-cache",
         "wpackagist-plugin/wp-crontrol"
-      ]
+      ],
+      "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
   },
   "scripts": {

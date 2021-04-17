@@ -22,11 +22,11 @@ logs
 .vscode/
 
 # WordPress core files
-wp/
+public/wp/
 
 # Plugins, uploads etc.
-wp-content/*
-!wp-content/plugins/
-wp-content/plugins/*
-!wp-content/plugins/index.php
-!wp-content/themes/
+public/wp-content/*
+!public/wp-content/plugins/
+public/wp-content/plugins/*
+!public/wp-content/plugins/index.php
+!public/wp-content/themes/

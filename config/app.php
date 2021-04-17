@@ -10,7 +10,7 @@ define( 'WP_POST_REVISIONS', 15 );
 
 define( 'ENVIRONMENT', Env::get( 'ENVIRONMENT', 'production' ) );
 
-define( 'WP_CONTENT_DIR', dirname( __DIR__ ) . '/wp-content' );
+define( 'WP_CONTENT_DIR', dirname( __DIR__ ) . '/public/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
 define( 'DISALLOW_FILE_EDIT', true );

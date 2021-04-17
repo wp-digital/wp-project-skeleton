@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdc5efc6607f95875e5122b8d9d187c5",
+    "content-hash": "7e167fdfc2dbe386ec6b1a9c57a829b9",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.3",
+            "version": "3.178.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a4f0bbeff965f67ca4dbfccfa2865de611f14c30"
+                "reference": "5a268a20272c0c9171570ed57f68b629e966deab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a4f0bbeff965f67ca4dbfccfa2865de611f14c30",
-                "reference": "a4f0bbeff965f67ca4dbfccfa2865de611f14c30",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a268a20272c0c9171570ed57f68b629e966deab",
+                "reference": "5a268a20272c0c9171570ed57f68b629e966deab",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.178.5"
             },
-            "time": "2021-03-29T18:16:38+00:00"
+            "time": "2021-04-15T18:12:46+00:00"
         },
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -1171,20 +1171,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.7.0",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2"
+                "reference": "921c59df22d69339d1a8135b9463791b8431b007"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/22ea3c6aa631e296c528f58a67371fb2a5e674f2",
-                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/921c59df22d69339d1a8135b9463791b8431b007",
+                "reference": "921c59df22d69339d1a8135b9463791b8431b007",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.7.0",
+                "johnpbloch/wordpress-core": "5.7.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -1213,20 +1213,20 @@
                 "source": "http://core.trac.wordpress.org/browser",
                 "wiki": "http://codex.wordpress.org/"
             },
-            "time": "2021-03-09T20:32:28+00:00"
+            "time": "2021-04-15T02:15:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.7.0",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d"
+                "reference": "4d368c02f3e842b446c867589656382f95c6ac58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8b057056692ca196aaa7a7ddd915f29426922c6d",
-                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4d368c02f3e842b446c867589656382f95c6ac58",
+                "reference": "4d368c02f3e842b446c867589656382f95c6ac58",
                 "shasum": ""
             },
             "require": {
@@ -1234,7 +1234,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.7.0"
+                "wordpress/core-implementation": "5.7.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1261,7 +1261,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2021-03-09T20:32:23+00:00"
+            "time": "2021-04-15T02:15:49+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1319,16 +1319,16 @@
         },
         {
             "name": "knplabs/github-api",
-            "version": "v2.19.2",
+            "version": "v2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "ad3b8e6084729adff5c804bc7058afc57ba04224"
+                "reference": "939869394c6414768547685945fdba4fe3f061b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/ad3b8e6084729adff5c804bc7058afc57ba04224",
-                "reference": "ad3b8e6084729adff5c804bc7058afc57ba04224",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/939869394c6414768547685945fdba4fe3f061b5",
+                "reference": "939869394c6414768547685945fdba4fe3f061b5",
                 "shasum": ""
             },
             "require": {
@@ -1352,7 +1352,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.19.x-dev",
+                    "dev-2.x": "2.20.x-dev",
                     "dev-master": "3.2.x-dev"
                 }
             },
@@ -1386,7 +1386,7 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/php-github-api/issues",
-                "source": "https://github.com/KnpLabs/php-github-api/tree/v2.19.2"
+                "source": "https://github.com/KnpLabs/php-github-api/tree/v2.20.0"
             },
             "funding": [
                 {
@@ -1394,14 +1394,14 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-28T13:11:08+00:00"
+            "time": "2021-04-16T09:36:20+00:00"
         },
         {
             "name": "koodimonni-language/core-nb_no",
-            "version": "5.7",
+            "version": "5.7.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.7/nb_NO.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.7.1/nb_NO.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1717,23 +1717,23 @@
         },
         {
             "name": "php-http/cache-plugin",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/cache-plugin.git",
-                "reference": "a1cb3e2a4f095f820e0a0e078f3dfd2d9c83a0f7"
+                "reference": "922409f10541b0d581b8ffe5cd810f4efc9e9e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/cache-plugin/zipball/a1cb3e2a4f095f820e0a0e078f3dfd2d9c83a0f7",
-                "reference": "a1cb3e2a4f095f820e0a0e078f3dfd2d9c83a0f7",
+                "url": "https://api.github.com/repos/php-http/cache-plugin/zipball/922409f10541b0d581b8ffe5cd810f4efc9e9e32",
+                "reference": "922409f10541b0d581b8ffe5cd810f4efc9e9e32",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0",
                 "php-http/client-common": "^1.9 || ^2.0",
                 "php-http/message-factory": "^1.0",
-                "psr/cache": "^1.0",
+                "psr/cache": "^1.0 || ^2.0",
                 "symfony/options-resolver": "^2.6 || ^3.0 || ^4.0 || ^5.0"
             },
             "require-dev": {
@@ -1770,9 +1770,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/cache-plugin/issues",
-                "source": "https://github.com/php-http/cache-plugin/tree/master"
+                "source": "https://github.com/php-http/cache-plugin/tree/1.7.2"
             },
-            "time": "2020-07-13T10:55:38+00:00"
+            "time": "2021-04-14T06:06:08+00:00"
         },
         {
             "name": "php-http/client-common",
@@ -3294,15 +3294,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3348,15 +3348,15 @@
         },
         {
             "name": "wpackagist-plugin/redis-cache",
-            "version": "2.0.17",
+            "version": "2.0.18",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/2.0.17"
+                "reference": "tags/2.0.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.0.17.zip"
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.0.18.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3366,15 +3366,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "16.0.2",
+            "version": "16.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/16.0.2"
+                "reference": "tags/16.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.16.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.16.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
