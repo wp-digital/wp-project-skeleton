@@ -23,6 +23,7 @@
     "php": ">=7.2",
     "boxuk/wp-muplugin-loader": "^1.3",
     "humanmade/s3-uploads": "^2.1",
+    "innocode-digital/wp-assets-version": "dev-main",
     "innocode-digital/wp-cdn": "dev-master",
     "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",
