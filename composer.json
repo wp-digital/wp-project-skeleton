@@ -28,6 +28,7 @@
     "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",
     "innocode-digital/wp-flush-cache": "dev-master",
+    "innocode-digital/wp-force-non-public": "dev-main",
     "innocode-digital/wp-github-oauth": "dev-master",
     "innocode-digital/wp-image-editor-aws-lambda": "dev-master",
     "innocode-digital/wp-mail-helpers": "dev-master",
