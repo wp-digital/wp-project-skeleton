@@ -865,12 +865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-batcache-helper.git",
-                "reference": "c552f9bf9b6a4a844ae4f1beaabeff8647acfd70"
+                "reference": "9c4920b27000033976fa0d4ef9d38e98868a3b9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-batcache-helper/zipball/c552f9bf9b6a4a844ae4f1beaabeff8647acfd70",
-                "reference": "c552f9bf9b6a4a844ae4f1beaabeff8647acfd70",
+                "url": "https://api.github.com/repos/innocode-digital/wp-batcache-helper/zipball/9c4920b27000033976fa0d4ef9d38e98868a3b9c",
+                "reference": "9c4920b27000033976fa0d4ef9d38e98868a3b9c",
                 "shasum": ""
             },
             "require": {
@@ -897,9 +897,9 @@
             "description": "Improves Batcache cache flushing.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-batcache-helper/issues",
-                "source": "https://github.com/innocode-digital/wp-batcache-helper/tree/1.1.0"
+                "source": "https://github.com/innocode-digital/wp-batcache-helper/tree/1.1.1"
             },
-            "time": "2022-01-28T16:42:54+00:00"
+            "time": "2022-01-28T17:12:03+00:00"
         },
         {
             "name": "innocode-digital/wp-cdn",
