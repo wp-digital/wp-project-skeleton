@@ -1,6 +1,11 @@
 <?php
 
 use Innocode\WPConfig\Env;
+use Innocode\WPConfig\Helpers;
+
+/**
+ * Object Cache
+ */
 
 /**
  * Connection Parameters
@@ -81,4 +86,28 @@ if ( Env::get( 'WP_REDIS_SHARDS' ) ) {
 
 if ( Env::get( 'WP_REDIS_CLUSTER' ) ) {
     define( 'WP_REDIS_CLUSTER', explode( ',', Env::get( 'WP_REDIS_CLUSTER' ) ) );
+}
+
+/**
+ * Page Cache
+ */
+
+if ( Env::get( 'WP_CACHE' ) ) {
+    define( 'WP_CACHE', true );
+
+    /**
+     * Batcache
+     */
+    $GLOBALS['batcache'] = [
+        'debug'              => Helpers::is_debug_enabled(),
+        'max_age'            => 3600,
+        'times'              => 1,
+        'ignored_query_args' => [
+            'utm_source',
+            'utm_medium',
+            'utm_term',
+            'utm_content',
+            'utm_campaign',
+        ],
+    ];
 }
