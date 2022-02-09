@@ -16,4 +16,6 @@ if ( Helpers::is_multisite() ) {
     if ( Env::get( 'NOBLOGREDIRECT' ) ) {
         define( 'NOBLOGREDIRECT', Env::get( 'NOBLOGREDIRECT' ) );
     }
+
+    define( 'WP_NR_IS_NETWORK_ACTIVE', true );
 }

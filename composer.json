@@ -54,7 +54,8 @@
     "wpackagist-plugin/meta-box": "*",
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/wp-crontrol": "*"
+    "wpackagist-plugin/wp-crontrol": "*",
+    "wpackagist-plugin/wp-newrelic": "*"
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
@@ -81,7 +82,6 @@
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "automattic/batcache",
         "humanmade/s3-uploads",
         "vendor:meta-box",
         "wpackagist-plugin/bugsnag",
@@ -89,7 +89,8 @@
         "wpackagist-plugin/mailgun",
         "wpackagist-plugin/meta-box",
         "wpackagist-plugin/redis-cache",
-        "wpackagist-plugin/wp-crontrol"
+        "wpackagist-plugin/wp-crontrol",
+        "wpackagist-plugin/wp-newrelic"
       ],
       "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
