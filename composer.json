@@ -5,7 +5,13 @@
   "license": "proprietary",
   "config": {
     "sort-packages": true,
-    "dropin-installer": "copy"
+    "dropin-installer": "copy",
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true,
+      "koodimonni/composer-dropin-installer": true,
+      "boxuk/wp-muplugin-loader": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
