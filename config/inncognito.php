@@ -1,0 +1,25 @@
+<?php
+
+use Innocode\WPConfig\Env;
+
+define( 'INNCOGNITO_DOMAIN', Env::get( 'INNCOGNITO_DOMAIN' ) );
+define( 'INNCOGNITO_CLIENT_ID', Env::get( 'INNCOGNITO_CLIENT_ID' ) );
+define( 'INNCOGNITO_CLIENT_SECRET', Env::get( 'INNCOGNITO_CLIENT_SECRET' ) );
+define( 'INNCOGNITO_REGION', Env::get( 'INNCOGNITO_REGION' ) );
+define( 'INNCOGNITO_USER_POOL_ID', Env::get( 'INNCOGNITO_USER_POOL_ID' ) );
+
+if ( Env::get( 'INNCOGNITO_ENDPOINT' ) ) {
+    define( 'INNCOGNITO_ENDPOINT', Env::get( 'INNCOGNITO_ENDPOINT' ) );
+}
+
+if ( Env::get( 'INNCOGNITO_COOKIE' ) ) {
+    define( 'INNCOGNITO_COOKIE', Env::get( 'INNCOGNITO_COOKIE' ) );
+}
+
+if ( Env::get( 'INNCOGNITO_FORCE_COGNITO' ) ) {
+    define( 'INNCOGNITO_FORCE_COGNITO', Env::get( 'INNCOGNITO_FORCE_COGNITO' ) );
+}
+
+if ( Env::get( 'INNCOGNITO_DISALLOW_REGISTRATION' ) ) {
+    define( 'INNCOGNITO_DISALLOW_REGISTRATION', Env::get( 'INNCOGNITO_DISALLOW_REGISTRATION' ) );
+}
