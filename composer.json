@@ -32,8 +32,8 @@
   "require": {
     "php": ">=7.2",
     "automattic/batcache": "dev-master",
-    "boxuk/wp-muplugin-loader": "^1.3",
-    "humanmade/s3-uploads": "^2.1",
+    "boxuk/wp-muplugin-loader": "^2.0",
+    "humanmade/s3-uploads": "^3.0",
     "innocode-digital/wp-assets-version": "dev-main",
     "innocode-digital/wp-batcache-helper": "dev-main",
     "innocode-digital/wp-cdn": "dev-master",

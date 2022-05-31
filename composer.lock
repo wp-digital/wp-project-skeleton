@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7dda5261c8365ad4b6f6072130fee030",
+    "content-hash": "b16abe7c0fc03cef82ed23555717407e",
     "packages": [
         {
             "name": "automattic/batcache",
@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.222.12",
+            "version": "3.224.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8503d393b3ebef20241931b1abc20cb2af494cb2"
+                "reference": "bc5eb18414ef703c5f39a5a009a437c74c228306"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8503d393b3ebef20241931b1abc20cb2af494cb2",
-                "reference": "8503d393b3ebef20241931b1abc20cb2af494cb2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bc5eb18414ef703c5f39a5a009a437c74c228306",
+                "reference": "bc5eb18414ef703c5f39a5a009a437c74c228306",
                 "shasum": ""
             },
             "require": {
@@ -174,9 +174,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.222.12"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.224.0"
             },
-            "time": "2022-05-13T18:15:34+00:00"
+            "time": "2022-05-27T20:23:28+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -234,35 +234,43 @@
         },
         {
             "name": "boxuk/wp-muplugin-loader",
-            "version": "1.6.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/boxuk/wp-muplugin-loader.git",
-                "reference": "e7f03177f42e016e18e30168bf3a936000e77ed1"
+                "reference": "b3b583325eea71fe3b8a41267744269f9648076d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boxuk/wp-muplugin-loader/zipball/e7f03177f42e016e18e30168bf3a936000e77ed1",
-                "reference": "e7f03177f42e016e18e30168bf3a936000e77ed1",
+                "url": "https://api.github.com/repos/boxuk/wp-muplugin-loader/zipball/b3b583325eea71fe3b8a41267744269f9648076d",
+                "reference": "b3b583325eea71fe3b8a41267744269f9648076d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
-                "php": "^7.3 || ^8.0"
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0 || ^8.1"
             },
             "require-dev": {
                 "10up/wp_mock": "^0.4",
                 "composer/composer": "^1.10 || ^2.0",
                 "mockery/mockery": "~1.3",
-                "phpunit/phpunit": "^9"
+                "phpunit/phpunit": "^9",
+                "psr/container": "1.1.1"
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
+                "class": "LkWdwrd\\MuPluginLoader\\Composer\\MuLoaderPlugin",
+                "branch-alias": {
+                    "dev-main": "2.0.x-dev"
+                }
             },
             "autoload": {
+                "files": [
+                    "src/Util/util.php"
+                ],
                 "psr-4": {
-                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
+                    "LkWdwrd\\MuPluginLoader\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -287,9 +295,9 @@
             ],
             "support": {
                 "issues": "https://github.com/boxuk/wp-muplugin-loader/issues",
-                "source": "https://github.com/boxuk/wp-muplugin-loader/tree/1.6.1"
+                "source": "https://github.com/boxuk/wp-muplugin-loader/tree/2.0.0"
             },
-            "time": "2021-12-01T17:08:36+00:00"
+            "time": "2022-03-02T10:29:07+00:00"
         },
         {
             "name": "composer/installers",
@@ -677,16 +685,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.5",
+            "version": "6.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
+                "reference": "f092dd734083473658de3ee4bef093ed77d2689c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f092dd734083473658de3ee4bef093ed77d2689c",
+                "reference": "f092dd734083473658de3ee4bef093ed77d2689c",
                 "shasum": ""
             },
             "require": {
@@ -724,9 +732,39 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
@@ -742,9 +780,23 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+                "source": "https://github.com/guzzle/guzzle/tree/6.5.6"
             },
-            "time": "2020-06-16T21:01:06+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-25T13:19:12+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -942,23 +994,33 @@
         },
         {
             "name": "humanmade/s3-uploads",
-            "version": "2.3.0",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/S3-Uploads.git",
-                "reference": "3b995ba6d1ccde4354efb9564c3e244f871bbcda"
+                "reference": "8ad534d49c0307dd7ee56f0ab6d18c478f83a34a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/3b995ba6d1ccde4354efb9564c3e244f871bbcda",
-                "reference": "3b995ba6d1ccde4354efb9564c3e244f871bbcda",
+                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/8ad534d49c0307dd7ee56f0ab6d18c478f83a34a",
+                "reference": "8ad534d49c0307dd7ee56f0ab6d18c478f83a34a",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "~3.18",
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ^2.0"
+            },
+            "require-dev": {
+                "humanmade/psalm-plugin-wordpress": "^1.0",
+                "pcov/clobber": "^2.0",
+                "phpunit/phpunit": "7.5"
             },
             "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "./inc"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -979,7 +1041,7 @@
                 "issues": "https://github.com/humanmade/s3-uploads/issues",
                 "source": "https://github.com/humanmade/s3-uploads"
             },
-            "time": "2021-03-18T10:55:13+00:00"
+            "time": "2022-03-02T11:59:49+00:00"
         },
         {
             "name": "innocode-digital/wp-assets-version",
@@ -1328,12 +1390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/inncognito.git",
-                "reference": "21bfba9d518d968049b77e37207b72b77d49d66b"
+                "reference": "2346b53f3cf334c4bb73193da9dcb29e3ef4740e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/21bfba9d518d968049b77e37207b72b77d49d66b",
-                "reference": "21bfba9d518d968049b77e37207b72b77d49d66b",
+                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/2346b53f3cf334c4bb73193da9dcb29e3ef4740e",
+                "reference": "2346b53f3cf334c4bb73193da9dcb29e3ef4740e",
                 "shasum": ""
             },
             "require": {
@@ -1380,9 +1442,9 @@
             ],
             "support": {
                 "issues": "https://github.com/innocode-digital/inncognito/issues",
-                "source": "https://github.com/innocode-digital/inncognito/tree/1.2.0"
+                "source": "https://github.com/innocode-digital/inncognito/tree/1.4.0"
             },
-            "time": "2022-05-14T21:08:53+00:00"
+            "time": "2022-05-25T16:51:58+00:00"
         },
         {
             "name": "innocode-digital/wp-mail-helpers",
@@ -1642,12 +1704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-theme-module.git",
-                "reference": "720a74ba325232454d7325ad2fd7d24ece67c623"
+                "reference": "efc87fe1cc4ff0864e887232022c131e0881ff16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-theme-module/zipball/720a74ba325232454d7325ad2fd7d24ece67c623",
-                "reference": "720a74ba325232454d7325ad2fd7d24ece67c623",
+                "url": "https://api.github.com/repos/innocode-digital/wp-theme-module/zipball/efc87fe1cc4ff0864e887232022c131e0881ff16",
+                "reference": "efc87fe1cc4ff0864e887232022c131e0881ff16",
                 "shasum": ""
             },
             "require": {
@@ -1667,26 +1729,26 @@
             "description": "Library for WordPress theme modularization.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-theme-module/issues",
-                "source": "https://github.com/innocode-digital/wp-theme-module/tree/1.1.0"
+                "source": "https://github.com/innocode-digital/wp-theme-module/tree/1.2.0"
             },
-            "time": "2022-01-31T16:43:31+00:00"
+            "time": "2022-05-24T07:25:27+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.9.3",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "8d0788bd5553c897b12bbf0e122c2fc5c4129914"
+                "reference": "2432ce687e68c3df7de16920d467761b241e20cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/8d0788bd5553c897b12bbf0e122c2fc5c4129914",
-                "reference": "8d0788bd5553c897b12bbf0e122c2fc5c4129914",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2432ce687e68c3df7de16920d467761b241e20cf",
+                "reference": "2432ce687e68c3df7de16920d467761b241e20cf",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.9.3",
+                "johnpbloch/wordpress-core": "6.0.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -1715,20 +1777,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2022-04-05T19:23:54+00:00"
+            "time": "2022-05-24T19:10:15+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.9.3",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "455d38c7b7bcdce3e0a1c6108eccca8de1860361"
+                "reference": "90d8de3a682f2ed93ebe8cf99bec8fb297d43967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/455d38c7b7bcdce3e0a1c6108eccca8de1860361",
-                "reference": "455d38c7b7bcdce3e0a1c6108eccca8de1860361",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/90d8de3a682f2ed93ebe8cf99bec8fb297d43967",
+                "reference": "90d8de3a682f2ed93ebe8cf99bec8fb297d43967",
                 "shasum": ""
             },
             "require": {
@@ -1736,7 +1798,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.9.3"
+                "wordpress/core-implementation": "6.0.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1763,7 +1825,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2022-04-05T19:23:48+00:00"
+            "time": "2022-05-24T19:10:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1821,10 +1883,10 @@
         },
         {
             "name": "koodimonni-language/core-nb_no",
-            "version": "5.9.3",
+            "version": "6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.9.3/nb_NO.zip"
+                "url": "https://downloads.wordpress.org/translation/core/6.0/nb_NO.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -2887,15 +2949,15 @@
         },
         {
             "name": "wpackagist-plugin/redis-cache",
-            "version": "2.0.25",
+            "version": "2.0.26",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redis-cache/",
-                "reference": "tags/2.0.25"
+                "reference": "tags/2.0.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.0.25.zip"
+                "url": "https://downloads.wordpress.org/plugin/redis-cache.2.0.26.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2905,15 +2967,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "18.8",
+            "version": "19.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/18.8"
+                "reference": "tags/19.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.18.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -3592,16 +3654,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.14.1",
+            "version": "1.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "de90ab2b41d7d61609f504e031339776bc8c7223"
+                "reference": "c8d48852fbc052454af42f6de27635ddd916b959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/de90ab2b41d7d61609f504e031339776bc8c7223",
-                "reference": "de90ab2b41d7d61609f504e031339776bc8c7223",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/c8d48852fbc052454af42f6de27635ddd916b959",
+                "reference": "c8d48852fbc052454af42f6de27635ddd916b959",
                 "shasum": ""
             },
             "require": {
@@ -3614,8 +3676,7 @@
                 "graham-campbell/phpspec-skip-example-extension": "^5.0",
                 "php-http/httplug": "^1.0 || ^2.0",
                 "php-http/message-factory": "^1.0",
-                "phpspec/phpspec": "^5.1 || ^6.1",
-                "puli/composer-plugin": "1.0.0-beta10"
+                "phpspec/phpspec": "^5.1 || ^6.1"
             },
             "suggest": {
                 "php-http/message": "Allow to use Guzzle, Diactoros or Slim Framework factories"
@@ -3654,9 +3715,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.14.1"
+                "source": "https://github.com/php-http/discovery/tree/1.14.2"
             },
-            "time": "2021-09-18T07:57:46+00:00"
+            "time": "2022-05-25T07:26:05+00:00"
         },
         {
             "name": "php-http/guzzle6-adapter",
