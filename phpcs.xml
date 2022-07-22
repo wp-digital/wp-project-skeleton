@@ -18,7 +18,7 @@
 	<arg name="parallel" value="8" />
 
 	<!-- Set a minimum PHP version for PHPCompatibility. -->
-	<config name="testVersion" value="7.1-" />
+	<config name="testVersion" value="7.2-" />
 
 	<!-- Use Innocode Coding Standards. -->
 	<rule ref="vendor/innocode-digital/php-cs" />
