@@ -2,7 +2,7 @@
 
 use Innocode\WPConfig\Env;
 
-define( 'WP_HOME', Env::get( 'WP_HOME' ) ); // It is preferable not to set this value dynamically due to file inclusion vulnerabilities
+define( 'WP_HOME', Env::get( 'WP_HOME' ) ); // It is preferable not to set this value dynamically due to file inclusion vulnerabilities.
 define( 'WP_SITEURL', Env::get( 'WP_SITEURL', WP_HOME . '/wp' ) );
 
 define( 'AUTOSAVE_INTERVAL', 180 );
@@ -18,8 +18,8 @@ define( 'DISALLOW_FILE_MODS', true );
 
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
-//define( 'WP_DEFAULT_THEME', '' ); @TODO: set project theme name or remove
+// define( 'WP_DEFAULT_THEME', '' ); @TODO: set project theme name or remove.
 
-if ( Env::get( 'FORCE_NON_PUBLIC' ) || ENVIRONMENT != 'production' ) {
-    define( 'FORCE_NON_PUBLIC', true );
+if ( Env::get( 'FORCE_NON_PUBLIC' ) || ENVIRONMENT !== 'production' ) {
+	define( 'FORCE_NON_PUBLIC', true );
 }

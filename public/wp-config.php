@@ -12,7 +12,7 @@ $table_prefix = WPConfig\Env::get( 'DB_PREFIX', 'wp_' );
 $config->load();
 
 if ( ! defined( 'ABSPATH' ) ) {
-    define( 'ABSPATH', __DIR__ . '/wp/' );
+	define( 'ABSPATH', __DIR__ . '/wp/' );
 }
 
 require_once ABSPATH . 'wp-settings.php';

@@ -10,7 +10,8 @@
       "composer/installers": true,
       "johnpbloch/wordpress-core-installer": true,
       "koodimonni/composer-dropin-installer": true,
-      "boxuk/wp-muplugin-loader": true
+      "boxuk/wp-muplugin-loader": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "minimum-stability": "dev",
@@ -65,7 +66,9 @@
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
-    "innocode-digital/wp-cli-scaffold-theme-command": "dev-master"
+    "innocode-digital/php-cs": "^1.0",
+    "innocode-digital/wp-cli-scaffold-theme-command": "dev-master",
+    "squizlabs/php_codesniffer": "^3.7"
   },
   "extra": {
     "wordpress-install-dir": "public/wp",
@@ -103,12 +106,14 @@
     }
   },
   "scripts": {
-    "post-create-project-cmd": [
-      "@wp-init"
-    ],
     "wp": "vendor/bin/wp",
     "wp-init": "@wp dotenv init --template=.env.example --with-salts",
-    "wp-scaffold-theme": "@wp scaffold theme --force --skip-env --skip-install-notice"
+    "wp-scaffold-theme": "@wp scaffold theme --force --skip-env --skip-install-notice",
+    "phpcs": "vendor/bin/phpcs --standard=phpcs.xml",
+    "phpcbf": "vendor/bin/phpcbf --standard=phpcs.xml",
+    "check-cs": "@phpcs",
+    "fix-cs": "@phpcbf",
+    "post-create-project-cmd": "@wp-init"
   },
   "authors": [
     {
