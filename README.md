@@ -9,20 +9,20 @@
 There are few possible options to use this skeleton:
 
 - Create new project with [Composer](https://getcomposer.org/):
-    ```
-    composer create-project innocode-digital/wp-project-skeleton
-    ```
+		```
+		composer create-project innocode-digital/wp-project-skeleton
+		```
 
 - Create new project on [GitHub](https://github.com/) from
-[this template](https://github.com/innocode-digital/wp-project-skeleton).
+	[this template](https://github.com/innocode-digital/wp-project-skeleton).
 
 - Alternative way is to clone this repo:
-    ```
-    git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
-    ```
-  
-Find `@TODO: ...` in code and replace with needed settings. 
-  
+		```
+		git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
+		```
+
+Find `@TODO: ...` in code and replace with needed settings.
+
 ### Documentation
 
 #### Install plugins, mu-plugins, PHP packages
@@ -71,11 +71,11 @@ to add it to `.gitignore`.
 
 **Install premium extensions from metabox.io**
 
-See documentation [metabox.io](https://docs.metabox.io/extensions/composer/) on how to do it in general. 
-Keep in mind that storing of the API Key in project `composer.json` is not a good idea, since 
+See documentation [metabox.io](https://docs.metabox.io/extensions/composer/) on how to do it in general.
+Keep in mind that storing of the API Key in project `composer.json` is not a good idea, since
 it could be situation that project will be taken by someone else, so the API Key may be accidentally
-shared. To add private source to `repositories`, you can add it in global config with the following command 
-`composer config repositories.metabox\.io composer https://packages.metabox.io/<API Key> --global` or edit 
+shared. To add private source to `repositories`, you can add it in global config with the following command
+`composer config repositories.metabox\.io composer https://packages.metabox.io/<API Key> --global` or edit
 `$HOME/.composer/config.json` manually:
 
 ```
