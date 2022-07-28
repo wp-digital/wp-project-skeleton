@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.231.11",
+            "version": "3.231.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6a37c3d5fe2d6b401f689aa37c9f962df55e680b"
+                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6a37c3d5fe2d6b401f689aa37c9f962df55e680b",
-                "reference": "6a37c3d5fe2d6b401f689aa37c9f962df55e680b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba379285d24b609a997bd8b40933d3e0a3826dfb",
+                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb",
                 "shasum": ""
             },
             "require": {
@@ -175,9 +175,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.15"
             },
-            "time": "2022-07-21T18:17:02+00:00"
+            "time": "2022-07-27T18:59:36+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2896,15 +2896,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.3.6",
+            "version": "2.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.3.6"
+                "reference": "tags/2.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2968,15 +2968,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "19.3",
+            "version": "19.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/19.3"
+                "reference": "tags/19.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -3369,16 +3369,16 @@
         },
         {
             "name": "innocode-digital/php-cs",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/php-cs.git",
-                "reference": "f083d22a3b26b4ce48fce5c48673dc718c5c1644"
+                "reference": "6dbfb740d4fe925fd52bfdc2d07294f8058badec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/php-cs/zipball/f083d22a3b26b4ce48fce5c48673dc718c5c1644",
-                "reference": "f083d22a3b26b4ce48fce5c48673dc718c5c1644",
+                "url": "https://api.github.com/repos/innocode-digital/php-cs/zipball/6dbfb740d4fe925fd52bfdc2d07294f8058badec",
+                "reference": "6dbfb740d4fe925fd52bfdc2d07294f8058badec",
                 "shasum": ""
             },
             "require": {
@@ -3396,9 +3396,9 @@
             "description": "Innocode Coding Standards.",
             "support": {
                 "issues": "https://github.com/innocode-digital/php-cs/issues",
-                "source": "https://github.com/innocode-digital/php-cs/tree/1.1.0"
+                "source": "https://github.com/innocode-digital/php-cs/tree/1.2.0"
             },
-            "time": "2022-07-22T11:24:16+00:00"
+            "time": "2022-07-28T10:45:35+00:00"
         },
         {
             "name": "innocode-digital/wp-cli-scaffold-theme-command",

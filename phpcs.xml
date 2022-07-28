@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Innocode"
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Innocode Project"
 				 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 	<description>Coding standards for developed projects by Innocode.</description>
 
@@ -21,7 +21,7 @@
 	<config name="testVersion" value="7.2-" />
 
 	<!-- Use Innocode Coding Standards. -->
-	<rule ref="vendor/innocode-digital/php-cs" />
+	<rule ref="Innocode" />
 
 	<!-- Added to suppress error in wp-config for overriding $table_prefix. -->
 	<rule ref="WordPress.WP.GlobalVariablesOverride">
