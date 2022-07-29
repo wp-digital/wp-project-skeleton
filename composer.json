@@ -37,6 +37,7 @@
     "humanmade/s3-uploads": "^3.0",
     "innocode-digital/wp-assets-version": "dev-main",
     "innocode-digital/wp-batcache-helper": "dev-main",
+		"innocode-digital/wp-bugnag-fe": "dev-main",
     "innocode-digital/wp-cdn": "dev-master",
     "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",

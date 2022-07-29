@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8fcfa9dbb01d58b0fa3a6b66dbe8ba8",
+    "content-hash": "cb43f14fdc08d11356ff519faf5ca85e",
     "packages": [
         {
             "name": "automattic/batcache",
@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.231.15",
+            "version": "3.231.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb"
+                "reference": "c50adea1de4ad3d6dda41310a8af5ce13ee876d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba379285d24b609a997bd8b40933d3e0a3826dfb",
-                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c50adea1de4ad3d6dda41310a8af5ce13ee876d5",
+                "reference": "c50adea1de4ad3d6dda41310a8af5ce13ee876d5",
                 "shasum": ""
             },
             "require": {
@@ -175,9 +175,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.15"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.16"
             },
-            "time": "2022-07-27T18:59:36+00:00"
+            "time": "2022-07-28T18:17:24+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1132,6 +1132,67 @@
                 "source": "https://github.com/innocode-digital/wp-batcache-helper/tree/1.1.2"
             },
             "time": "2022-02-08T10:23:05+00:00"
+        },
+        {
+            "name": "innocode-digital/wp-bugnag-fe",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/innocode-digital/wp-bugsnag-fe.git",
+                "reference": "1ab1243a7c46dce4328a3cbcb6e14f83df083edd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/innocode-digital/wp-bugsnag-fe/zipball/1ab1243a7c46dce4328a3cbcb6e14f83df083edd",
+                "reference": "1ab1243a7c46dce4328a3cbcb6e14f83df083edd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "innocode-digital/php-cs": "^1.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Innocode\\BugsnagFE\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Innocode",
+                    "email": "post@innocode.no",
+                    "homepage": "https://innocode.com/"
+                },
+                {
+                    "name": "Viktor Kuliebiakin",
+                    "email": "kuliebiakin@gmail.com"
+                }
+            ],
+            "description": "Automatically detects issues from browser on site and notifies by email, chat or ticket system via Bugsnag.",
+            "keywords": [
+                "bugsnag",
+                "error",
+                "fe",
+                "frontend",
+                "monitoring",
+                "mu-plugin",
+                "plugin",
+                "wordpress",
+                "wp"
+            ],
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-bugsnag-fe/issues",
+                "source": "https://github.com/innocode-digital/wp-bugsnag-fe/tree/main"
+            },
+            "time": "2022-07-29T12:54:23+00:00"
         },
         {
             "name": "innocode-digital/wp-cdn",
@@ -4649,16 +4710,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.4.8",
+            "version": "v5.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "9b630f3427f3ebe7cd346c277a1408b00249dad9"
+                "reference": "7872a66f57caffa2916a584db1aa7f12adc76f8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/9b630f3427f3ebe7cd346c277a1408b00249dad9",
-                "reference": "9b630f3427f3ebe7cd346c277a1408b00249dad9",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/7872a66f57caffa2916a584db1aa7f12adc76f8c",
+                "reference": "7872a66f57caffa2916a584db1aa7f12adc76f8c",
                 "shasum": ""
             },
             "require": {
@@ -4692,7 +4753,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.4.8"
+                "source": "https://github.com/symfony/finder/tree/v5.4.11"
             },
             "funding": [
                 {
@@ -4708,20 +4769,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-15T08:07:45+00:00"
+            "time": "2022-07-29T07:37:50+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v5.4.3",
+            "version": "v5.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "cc1147cb11af1b43f503ac18f31aa3bec213aba8"
+                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/cc1147cb11af1b43f503ac18f31aa3bec213aba8",
-                "reference": "cc1147cb11af1b43f503ac18f31aa3bec213aba8",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/54f14e36aa73cb8f7261d7686691fd4d75ea2690",
+                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690",
                 "shasum": ""
             },
             "require": {
@@ -4761,7 +4822,7 @@
                 "options"
             ],
             "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v5.4.3"
+                "source": "https://github.com/symfony/options-resolver/tree/v5.4.11"
             },
             "funding": [
                 {
@@ -4777,7 +4838,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-07-20T13:00:38+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -5241,6 +5302,7 @@
         "automattic/batcache": 20,
         "innocode-digital/wp-assets-version": 20,
         "innocode-digital/wp-batcache-helper": 20,
+        "innocode-digital/wp-bugnag-fe": 20,
         "innocode-digital/wp-cdn": 20,
         "innocode-digital/wp-config": 20,
         "innocode-digital/wp-deferred-loading": 20,
