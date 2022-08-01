@@ -8,8 +8,7 @@ on:
       - feature/update_automation
 
 env:
-  COMPOSER_HOME: $HOME/.composer
-  COMPOSER_GLOBAL_CONFIG: ${{ env.COMPOSER_HOME }}/config.json
+  COMPOSER_GLOBAL_CONFIG: $HOME/.composer/config.json
 
 jobs:
   build:
