@@ -22,9 +22,6 @@ jobs:
       - name: Update dependencies
         run: composer update --no-progress --prefer-dist
 
-      - name: Remove config.json file
-        run: rm -f $HOME/.composer/config.json
-
       - name: Pull request
         uses: repo-sync/pull-request@v2
         with:
