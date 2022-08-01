@@ -3,9 +3,7 @@ name: Update Dependencies at 06:00 on every 15th day-of-month.
 on:
   schedule:
     - cron: "0 6 */15 * *"
-  push:
-    branches:
-      - feature/update_automation
+  workflow_dispatch:
 
 jobs:
   build:
@@ -37,5 +35,4 @@ jobs:
           pr_label: "auto-update"
 #          pr_reviewer: "wei,worker"
 #          pr_assignee: "wei,worker"
-          pr_allow_empty: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
