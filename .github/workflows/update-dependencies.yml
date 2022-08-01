@@ -30,8 +30,9 @@ jobs:
 
       - name: Update dependencies
         uses: php-actions/composer@v6
+        env:
+          COMPOSER_HOME: $HOME/.composer
         with:
-          env: COMPOSER_HOME=$HOME/.composer
           command: update
           php_version: 7.4
 
