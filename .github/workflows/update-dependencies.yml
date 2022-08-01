@@ -15,15 +15,15 @@ jobs:
 
       - name: Config Composer
         run: |
-          echo "{" > $HOME/config.json \
-          echo   "\"config\": {}," >> $HOME/config.json \
-          echo   "\"repositories\": {" >> $HOME/config.json \
-          echo     "\"metabox.io\": {" >> $HOME/config.json \
-          echo       "\"type\": \"composer\",">> $HOME/config.json \
-          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $HOME/config.json \
-          echo     "}" >> $HOME/config.json \
-          echo   "}">> $HOME/config.json \
-          echo "}" >> $HOME/config.json
+          echo "{" > $HOME/.composer/config.json \
+          echo   "\"config\": {}," >> $HOME/.composer/config.json \
+          echo   "\"repositories\": {" >> $HOME/.composer/config.json \
+          echo     "\"metabox.io\": {" >> $HOME/.composer/config.json \
+          echo       "\"type\": \"composer\",">> $HOME/.composer/config.json \
+          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $HOME/.composer/config.json \
+          echo     "}" >> $HOME/.composer/config.json \
+          echo   "}">> $HOME/.composer/config.json \
+          echo "}" >> $HOME/.composer/config.json
 
       - name: Update dependencies
         uses: php-actions/composer@v6
