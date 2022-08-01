@@ -1,7 +1,6 @@
 ---
 name: SEO after changes
-about: Checklist for testing after adding changes on site. Need to check only points that were changed and related
-points.
+about: Checklist for testing after adding changes on site. Need to check only points that were changed and related.
 title: ''
 labels: ''
 assignees: ''
