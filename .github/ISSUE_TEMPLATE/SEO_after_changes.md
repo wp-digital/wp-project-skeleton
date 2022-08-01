@@ -29,7 +29,7 @@ assignees: ''
 
 - [ ] H1 tag is used only once per page and users can not add more from admin panel
 - [ ] Meta description is used - Check meta content (title, meta description, social meta tags, favicon) for all
-  templates
+	templates
 - [ ] All external links are opening in new tab or window
 - [ ] No duplicate content
 - [ ] Canonical url - If duplicate content, canonicalize original content. If not canonicalize the page
