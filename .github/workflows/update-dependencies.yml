@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php_version: 7.4
+
       - name: Config Composer
         run: composer config repositories.metabox\.io composer 'https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}' --global
 
