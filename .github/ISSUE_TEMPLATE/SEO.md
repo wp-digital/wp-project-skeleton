@@ -1,6 +1,6 @@
 ---
 name: SEO
-about: Checklist
+about: Checklist.
 title: ''
 labels: ''
 assignees: ''

@@ -1,6 +1,6 @@
 ---
 name: SSL
-about: Checklist
+about: Checklist.
 title: ''
 labels: ''
 assignees: ''
