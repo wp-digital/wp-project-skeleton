@@ -15,15 +15,15 @@ jobs:
 
       - name: Config Composer
         run: |
-          echo "{" > $GITHUB_WORKSPACE/config.json \
-          echo   "\"config\": {}," >> $GITHUB_WORKSPACE/config.json \
-          echo   "\"repositories\": {" >> $GITHUB_WORKSPACE/config.json \
-          echo     "\"metabox.io\": {" >> $GITHUB_WORKSPACE/config.json \
-          echo       "\"type\": \"composer\",">> $GITHUB_WORKSPACE/config.json \
-          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $GITHUB_WORKSPACE/config.json \
-          echo     "}" >> $GITHUB_WORKSPACE/config.json \
-          echo   "}">> $GITHUB_WORKSPACE/config.json \
-          echo "}" >> $GITHUB_WORKSPACE/config.json
+          echo "{" > $GITHUB_WORKSPACE/.composer/config.json \
+          echo   "\"config\": {}," >> $GITHUB_WORKSPACE/.composer/config.json \
+          echo   "\"repositories\": {" >> $GITHUB_WORKSPACE/.composer/config.json \
+          echo     "\"metabox.io\": {" >> $GITHUB_WORKSPACE/.composer/config.json \
+          echo       "\"type\": \"composer\",">> $GITHUB_WORKSPACE/.composer/config.json \
+          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $GITHUB_WORKSPACE/.composer/config.json \
+          echo     "}" >> $GITHUB_WORKSPACE/.composer/config.json \
+          echo   "}">> $GITHUB_WORKSPACE/.composer/config.json \
+          echo "}" >> $GITHUB_WORKSPACE/.composer/config.json
 
       - name: Update dependencies
         uses: php-actions/composer@v6
@@ -32,7 +32,7 @@ jobs:
           php_version: 7.4
 
       - name: Remove config.json file
-        run: rm -f $GITHUB_WORKSPACE/config.json
+        run: rm -f $GITHUB_WORKSPACE/.composer/config.json
 
       - name: Pull request
         uses: repo-sync/pull-request@v2
