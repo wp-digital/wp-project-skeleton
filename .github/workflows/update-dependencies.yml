@@ -8,7 +8,7 @@ on:
       - feature/update_automation
 
 env:
-  COMPOSER_GLOBAL_CONFIG: $HOME/.composer/config.json
+  COMPOSER_CONFIG: $GITHUB_WORKSPACE/config.json
 
 jobs:
   build:
@@ -18,26 +18,26 @@ jobs:
 
       - name: Config Composer
         run: |
-          echo "{" > ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo   "\"config\": {}," >> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo   "\"repositories\": {" >> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo     "\"metabox.io\": {" >> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo       "\"type\": \"composer\",">> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo     "}" >> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo   "}">> ${{ env.COMPOSER_GLOBAL_CONFIG }} \
-          echo "}" >> ${{ env.COMPOSER_GLOBAL_CONFIG }}
+          echo "{" > ${{ env.COMPOSER_CONFIG }} \
+          echo   "\"config\": {}," >> ${{ env.COMPOSER_CONFIG }} \
+          echo   "\"repositories\": {" >> ${{ env.COMPOSER_CONFIG }} \
+          echo     "\"metabox.io\": {" >> ${{ env.COMPOSER_CONFIG }} \
+          echo       "\"type\": \"composer\",">> ${{ env.COMPOSER_CONFIG }} \
+          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> ${{ env.COMPOSER_CONFIG }} \
+          echo     "}" >> ${{ env.COMPOSER_CONFIG }} \
+          echo   "}">> ${{ env.COMPOSER_CONFIG }} \
+          echo "}" >> ${{ env.COMPOSER_CONFIG }}
 
       - name: Update dependencies
         uses: php-actions/composer@v6
         env:
-          COMPOSER_HOME: $HOME/.composer
+          COMPOSER_HOME: $GITHUB_WORKSPACE
         with:
           command: update
           php_version: 7.4
 
       - name: Remove config.json file
-        run: rm -f $HOME/config.json
+        run: rm -f $GITHUB_WORKSPACE/config.json
 
       - name: Pull request
         uses: repo-sync/pull-request@v2
