@@ -9,7 +9,7 @@ on:
 
 env:
   COMPOSER_HOME: $HOME/.composer
-  COMPOSER_GLOBAL_CONFIG: $COMPOSER_HOME/config.json
+  COMPOSER_GLOBAL_CONFIG: ${{ env.COMPOSER_HOME }}/config.json
 
 jobs:
   build:
