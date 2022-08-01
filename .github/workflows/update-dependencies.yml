@@ -22,13 +22,7 @@ jobs:
         run: composer config repositories.metabox\.io composer 'https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}' --global
 
       - name: Update dependencies
-        run: composer update --no-progress --prefer-dist --optimize-autoloader
-#        uses: php-actions/composer@v6
-#        env:
-#          COMPOSER_HOME: $GITHUB_WORKSPACE
-#        with:
-#          command: update
-#          php_version: 7.4
+        run: composer update --no-progress --prefer-dist
 
       - name: Remove config.json file
         run: rm -f $HOME/.composer/config.json
@@ -43,4 +37,5 @@ jobs:
           pr_label: "auto-update"
 #          pr_reviewer: "wei,worker"
 #          pr_assignee: "wei,worker"
+          pr_allow_empty: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
