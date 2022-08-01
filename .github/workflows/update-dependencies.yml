@@ -3,6 +3,9 @@ name: Update Dependencies at 06:00 on every 15th day-of-month.
 on:
   schedule:
     - cron: "0 6 */15 * *"
+  push:
+    branches:
+      - feature/update_automation
 
 jobs:
   build:
@@ -21,8 +24,8 @@ jobs:
         with:
           source_branch: "main"
           destination_branch: "stage"
-          pr_title: Update dependencies
-          pr_body: An automated update of WordPress core, plugins and/or PHP dependencies.
+          pr_title: "Update dependencies"
+          pr_body: "An automated update of WordPress core, plugins and/or PHP dependencies."
           pr_label: "auto-update"
 #          pr_reviewer: "wei,worker"
 #          pr_assignee: "wei,worker"
