@@ -7,6 +7,9 @@ on:
     branches:
       - feature/update_automation
 
+env:
+  COMPOSER_GLOBAL_CONFIG: $HOME/.composer/config.json
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,15 +18,15 @@ jobs:
 
       - name: Config Composer
         run: |
-          echo "{" > $HOME/.composer/config.json \
-          echo   "\"config\": {}," >> $HOME/.composer/config.json \
-          echo   "\"repositories\": {" >> $HOME/.composer/config.json \
-          echo     "\"metabox.io\": {" >> $HOME/.composer/config.json \
-          echo       "\"type\": \"composer\",">> $HOME/.composer/config.json \
-          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $HOME/.composer/config.json \
-          echo     "}" >> $HOME/.composer/config.json \
-          echo   "}">> $HOME/.composer/config.json \
-          echo "}" >> $HOME/.composer/config.json
+          echo "{" > $COMPOSER_GLOBAL_CONFIG \
+          echo   "\"config\": {}," >> $COMPOSER_GLOBAL_CONFIG \
+          echo   "\"repositories\": {" >> $COMPOSER_GLOBAL_CONFIG \
+          echo     "\"metabox.io\": {" >> $COMPOSER_GLOBAL_CONFIG \
+          echo       "\"type\": \"composer\",">> $COMPOSER_GLOBAL_CONFIG \
+          echo       "\"url\": \"https://packages.metabox.io/${{ secrets.METABOX_API_KEY }}\"" >> $COMPOSER_GLOBAL_CONFIG \
+          echo     "}" >> $COMPOSER_GLOBAL_CONFIG \
+          echo   "}">> $COMPOSER_GLOBAL_CONFIG \
+          echo "}" >> $COMPOSER_GLOBAL_CONFIG
 
       - name: Update dependencies
         uses: php-actions/composer@v6
