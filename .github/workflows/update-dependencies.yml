@@ -3,9 +3,7 @@ name: Update Dependencies at 06:00 on every 15th day-of-month.
 on:
   schedule:
     - cron: "0 6 */15 * *"
-  push:
-    branches:
-      - feature/update_automation
+  workflow_dispatch:
 
 env:
   COMPOSER_HOME: $HOME/.composer
@@ -19,7 +17,7 @@ jobs:
 
       - name: Config Composer
         run: |
-          mkdir $COMPOSER_HOME
+          mkdir -p $COMPOSER_HOME
           echo "{" > $COMPOSER_GLOBAL_CONFIG \
           echo   "\"config\": {}," >> $COMPOSER_GLOBAL_CONFIG \
           echo   "\"repositories\": {" >> $COMPOSER_GLOBAL_CONFIG \
