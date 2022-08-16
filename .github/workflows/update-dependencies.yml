@@ -22,9 +22,6 @@ jobs:
       - name: Update dependencies
         run: composer update --no-progress --prefer-dist
 
-      - name: Remove config.json file
-        run: rm -f $HOME/.composer/config.json
-
       - name: Pull request
         uses: repo-sync/pull-request@v2
         with:
@@ -33,6 +30,6 @@ jobs:
           pr_title: "Update dependencies"
           pr_body: "An automated update of WordPress core, plugins and/or PHP dependencies."
           pr_label: "auto-update"
-#          pr_reviewer: "wei,worker"
-#          pr_assignee: "wei,worker"
+          #          pr_reviewer: "wei,worker"
+          #          pr_assignee: "wei,worker"
           github_token: ${{ secrets.GITHUB_TOKEN }}
