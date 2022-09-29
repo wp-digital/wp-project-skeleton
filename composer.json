@@ -31,7 +31,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.2",
+		"php": ">=7.4",
 		"automattic/batcache": "dev-master",
 		"boxuk/wp-muplugin-loader": "^2.0",
 		"humanmade/s3-uploads": "^3.0",

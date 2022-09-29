@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+cd $(dirname $(dirname $(realpath "$0")))
+
+if $(wp core is-installed --network)
+then
+  SITE_URLS=`wp site list --fields=url --archived=0 --deleted=0 --format=csv | sed 1d`
+else
+  SITE_URLS=`wp option get siteurl`
+fi
+
+for SITE_URL in $SITE_URLS
+do
+  wp cron event run --due-now --url="$SITE_URL"
+done

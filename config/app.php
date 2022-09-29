@@ -23,3 +23,7 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
 if ( Env::get( 'FORCE_NON_PUBLIC' ) || ENVIRONMENT !== 'production' ) {
 	define( 'FORCE_NON_PUBLIC', true );
 }
+
+if ( ! Env::get( 'USE_WP_CRON' ) ) {
+	define( 'DISABLE_WP_CRON', 'true' );
+}
