@@ -67,6 +67,20 @@ composer dump-autoload
 If you want to install some theme as dependency then remember
 to add it to `.gitignore`.
 
+#### Cron
+
+By default, WordPress cron is disabled, but it's possible to enable it:
+
+````
+define( 'USE_WP_CRON', true );
+````
+
+There is a possibility to use server-side cron. It's needed to do next steps to make it run:
+
+1. Make script executable: `chmod +x ./bin/run-wp-cron`
+2. Test script: `./bin/run-wp-cron`
+3. Set server-side cron e.g. with per each 5 minutes: `*/5 * * * * /path/to/bin/run-wp-cron`
+
 ### Caveats
 
 **Install premium extensions from metabox.io**
