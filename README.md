@@ -69,10 +69,10 @@ to add it to `.gitignore`.
 
 #### Cron
 
-By default, WordPress cron is disabled, but it's possible to enable it:
+By default, WordPress cron is disabled, but it's possible to enable it through environment variable:
 
 ````
-define( 'USE_WP_CRON', true );
+USE_WP_CRON=true
 ````
 
 There is a possibility to use server-side cron. It's needed to do next steps to make it run:
