@@ -1454,12 +1454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/inncognito.git",
-                "reference": "ce92b9585d71199e21e31d9af7d434ff0f1e8e52"
+                "reference": "eb4d90cdaefd261b3e7c1e50d124802e33d5f201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/ce92b9585d71199e21e31d9af7d434ff0f1e8e52",
-                "reference": "ce92b9585d71199e21e31d9af7d434ff0f1e8e52",
+                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/eb4d90cdaefd261b3e7c1e50d124802e33d5f201",
+                "reference": "eb4d90cdaefd261b3e7c1e50d124802e33d5f201",
                 "shasum": ""
             },
             "require": {
@@ -1506,9 +1506,9 @@
             ],
             "support": {
                 "issues": "https://github.com/innocode-digital/inncognito/issues",
-                "source": "https://github.com/innocode-digital/inncognito/tree/1.6.2"
+                "source": "https://github.com/innocode-digital/inncognito/tree/1.6.3"
             },
-            "time": "2022-10-05T11:53:15+00:00"
+            "time": "2022-10-05T12:31:32+00:00"
         },
         {
             "name": "innocode-digital/wp-mail-helpers",
@@ -3053,15 +3053,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "19.7.1",
+            "version": "19.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/19.7.1"
+                "reference": "tags/19.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.7.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
