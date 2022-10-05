@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b84c4667e1b5be58a6419e87fe4d7db5",
+    "content-hash": "247a013857bbe3fb09d1e107672ec4c8",
     "packages": [
         {
             "name": "automattic/batcache",
@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.236.1",
+            "version": "3.238.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1e8d1abe7582968df16a2e7a87c5dcc51d0dfd1b"
+                "reference": "f55a1f9e34e45d87628937f04bba170fe56015bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1e8d1abe7582968df16a2e7a87c5dcc51d0dfd1b",
-                "reference": "1e8d1abe7582968df16a2e7a87c5dcc51d0dfd1b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f55a1f9e34e45d87628937f04bba170fe56015bb",
+                "reference": "f55a1f9e34e45d87628937f04bba170fe56015bb",
                 "shasum": ""
             },
             "require": {
@@ -177,9 +177,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.236.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.238.0"
             },
-            "time": "2022-09-27T18:19:10+00:00"
+            "time": "2022-10-04T18:18:02+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -502,16 +502,16 @@
         },
         {
             "name": "endroid/qr-code",
-            "version": "4.5.2",
+            "version": "4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/qr-code.git",
-                "reference": "aec7fb1f008ed515f0580d7871dffa19428efb82"
+                "reference": "b60873b14e2ca7bf3c3746f5e032023095a7e05c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/qr-code/zipball/aec7fb1f008ed515f0580d7871dffa19428efb82",
-                "reference": "aec7fb1f008ed515f0580d7871dffa19428efb82",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/b60873b14e2ca7bf3c3746f5e032023095a7e05c",
+                "reference": "b60873b14e2ca7bf3c3746f5e032023095a7e05c",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
             ],
             "support": {
                 "issues": "https://github.com/endroid/qr-code/issues",
-                "source": "https://github.com/endroid/qr-code/tree/4.5.2"
+                "source": "https://github.com/endroid/qr-code/tree/4.6.0"
             },
             "funding": [
                 {
@@ -570,7 +570,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-28T11:14:01+00:00"
+            "time": "2022-10-04T17:13:41+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -1454,12 +1454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/inncognito.git",
-                "reference": "08dddc208be678ceb228b5adfaff727a7a689e0d"
+                "reference": "ce92b9585d71199e21e31d9af7d434ff0f1e8e52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/08dddc208be678ceb228b5adfaff727a7a689e0d",
-                "reference": "08dddc208be678ceb228b5adfaff727a7a689e0d",
+                "url": "https://api.github.com/repos/innocode-digital/inncognito/zipball/ce92b9585d71199e21e31d9af7d434ff0f1e8e52",
+                "reference": "ce92b9585d71199e21e31d9af7d434ff0f1e8e52",
                 "shasum": ""
             },
             "require": {
@@ -1506,9 +1506,9 @@
             ],
             "support": {
                 "issues": "https://github.com/innocode-digital/inncognito/issues",
-                "source": "https://github.com/innocode-digital/inncognito/tree/1.4.5"
+                "source": "https://github.com/innocode-digital/inncognito/tree/1.6.2"
             },
-            "time": "2022-07-08T06:40:14+00:00"
+            "time": "2022-10-05T11:53:15+00:00"
         },
         {
             "name": "innocode-digital/wp-mail-helpers",
@@ -2978,6 +2978,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/disable-comments/"
+        },
+        {
+            "name": "wpackagist-plugin/disable-xml-rpc",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-xml-rpc/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-xml-rpc.1.0.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-xml-rpc/"
         },
         {
             "name": "wpackagist-plugin/mailgun",
