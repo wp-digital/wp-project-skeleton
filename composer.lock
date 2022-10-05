@@ -1052,17 +1052,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-assets-version.git",
-                "reference": "57b21bcfc5e426e7306b91a017c5b2155bf4acfd"
+                "reference": "b10afdbbc7665513538169eb89c5e630d1e8f221"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-assets-version/zipball/57b21bcfc5e426e7306b91a017c5b2155bf4acfd",
-                "reference": "57b21bcfc5e426e7306b91a017c5b2155bf4acfd",
+                "url": "https://api.github.com/repos/innocode-digital/wp-assets-version/zipball/b10afdbbc7665513538169eb89c5e630d1e8f221",
+                "reference": "b10afdbbc7665513538169eb89c5e630d1e8f221",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "php": ">=7.1"
+                "innocode-digital/wp-version": "^1.0",
+                "php": ">=7.3"
             },
             "default-branch": true,
             "type": "wordpress-muplugin",
@@ -1089,9 +1090,9 @@
             "description": "Helps with versioning of CSS and JS files.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-assets-version/issues",
-                "source": "https://github.com/innocode-digital/wp-assets-version/tree/1.0.0"
+                "source": "https://github.com/innocode-digital/wp-assets-version/tree/1.1.0"
             },
-            "time": "2021-08-13T07:44:18+00:00"
+            "time": "2022-10-05T13:19:33+00:00"
         },
         {
             "name": "innocode-digital/wp-batcache-helper",
@@ -1796,6 +1797,40 @@
                 "source": "https://github.com/innocode-digital/wp-theme-module/tree/1.2.0"
             },
             "time": "2022-05-24T07:25:27+00:00"
+        },
+        {
+            "name": "innocode-digital/wp-version",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/innocode-digital/wp-version.git",
+                "reference": "375d8e9e5648ca79f72f26a16acfcfbe51766866"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/innocode-digital/wp-version/zipball/375d8e9e5648ca79f72f26a16acfcfbe51766866",
+                "reference": "375d8e9e5648ca79f72f26a16acfcfbe51766866",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innocode\\Version\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple versioning for WordPress.",
+            "support": {
+                "issues": "https://github.com/innocode-digital/wp-version/issues",
+                "source": "https://github.com/innocode-digital/wp-version/tree/1.0.0"
+            },
+            "time": "2022-06-06T08:43:16+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
