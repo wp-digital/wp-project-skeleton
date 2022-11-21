@@ -112,5 +112,9 @@ if ( Env::get( 'WP_CACHE' ) ) {
 			'utm_content',
 			'utm_campaign',
 		],
+		// @TODO: Uncomment when you need to use different versions of content for real users vs bots, e.g. for Prerender.
+		// 'unique'             => [
+		// 'crawler' => ( new CrawlerDetect() )->isCrawler(),
+		// ],
 	];
 }
