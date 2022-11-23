@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Innocode Project"
-				 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+		 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 	<description>Coding standards for developed projects by Innocode.</description>
 
 	<!-- Files or directories to check. -->
@@ -13,15 +13,15 @@
 	<exclude-pattern>/public/wp-content/themes/index.php</exclude-pattern>
 
 	<!-- Path to strip from the front of file paths inside reports (displays shorter paths). -->
-	<arg name="basepath" value="." />
-	<arg name="colors" />
-	<arg name="parallel" value="8" />
+	<arg name="basepath" value="."/>
+	<arg name="colors"/>
+	<arg name="parallel" value="8"/>
 
 	<!-- Set a minimum PHP version for PHPCompatibility. -->
-	<config name="testVersion" value="7.2-" />
+	<config name="testVersion" value="7.2-"/>
 
 	<!-- Use Innocode Coding Standards. -->
-	<rule ref="Innocode" />
+	<rule ref="Innocode"/>
 
 	<!-- Added to suppress error in wp-config for overriding $table_prefix. -->
 	<rule ref="WordPress.WP.GlobalVariablesOverride">

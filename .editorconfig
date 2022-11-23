@@ -3,13 +3,21 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
+indent_size = 4
 indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.php]
-indent_size = 4
+[*.{js,json}]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+indent_style = space
+indent_size = 2
 
 [*.md]
 trim_trailing_whitespace = false
+
+[{*.txt,wp-config-sample.php}]
+end_of_line = crlf

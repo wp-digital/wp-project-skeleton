@@ -16,16 +16,16 @@ assignees: ''
 - [ ] Site domain is set to _live_ value in database after launch (use --network flag for WordPress network)
 - [ ] Site domain is set **only** to _www_ or _non-www_ value in database (use --network flag for WordPress network)
 - [ ] Install SSL/HTTPS - then check assets are still showing incognito mode (as sometimes they can be cached on CDN and
-	problem is not detected)
+  problem is not detected)
 - [ ] Set correct permalink structure - General advice: /%category%/%postname%/
 - [ ] 404 page is added and styled
 - [ ] HTML is valid - we can use https://validator.w3.org/
 - [ ] Site is mobile friendly (use https://search.google.com/test/mobile-friendly)
 - [ ] Site is mobile friendly with content - Content should show in html so Google can index properly (use same tool as
-	above)
+  above)
 - [ ] Check structured data at least on main pages (use https://search.google.com/structured-data/testing-tool)
 - [ ] Load time - check all templates for acceptable load time (
-	use https://developers.google.com/speed/pagespeed/insights/)
+  use https://developers.google.com/speed/pagespeed/insights/)
 - [ ] Setup Google Analytics - depending on environment, possibly one for stage and one for prod
 - [ ] Site search in Google Analytics - Make sure internal site search is recorded in Google Analytics
 - [ ] Setup Google Tag Manager - depending on environment, possibly one for stage and one for prod
@@ -48,7 +48,7 @@ assignees: ''
 
 - [ ] H1 tag is used only once per page and users can not add more from admin panel
 - [ ] Meta description is used - Check meta content (title, meta description, social meta tags, favicon) for all
-	templates
+  templates
 - [ ] All external links are opening in new tab or window
 - [ ] No duplicate content
 - [ ] Canonical url - If duplicate content, canonicalize original content. If not canonicalize the page

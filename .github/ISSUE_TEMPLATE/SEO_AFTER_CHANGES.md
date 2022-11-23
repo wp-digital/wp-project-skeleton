@@ -13,10 +13,10 @@ assignees: ''
 - [ ] HTML is valid - we can use https://validator.w3.org/
 - [ ] Site is mobile friendly (use https://search.google.com/test/mobile-friendly)
 - [ ] Site is mobile friendly with content - Content should show in html so Google can index properly (use same tool as
-	above)
+  above)
 - [ ] Check structured data at least on main pages (use https://search.google.com/structured-data/testing-tool)
 - [ ] Load time - check all templates for acceptable load time (
-	use https://developers.google.com/speed/pagespeed/insights/)
+  use https://developers.google.com/speed/pagespeed/insights/)
 
 ### Resources
 
@@ -28,7 +28,7 @@ assignees: ''
 
 - [ ] H1 tag is used only once per page and users can not add more from admin panel
 - [ ] Meta description is used - Check meta content (title, meta description, social meta tags, favicon) for all
-	templates
+  templates
 - [ ] All external links are opening in new tab or window
 - [ ] No duplicate content
 - [ ] Canonical url - If duplicate content, canonicalize original content. If not canonicalize the page

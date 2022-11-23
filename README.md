@@ -9,17 +9,17 @@
 There are few possible options to use this skeleton:
 
 - Create new project with [Composer](https://getcomposer.org/):
-		```
-		composer create-project innocode-digital/wp-project-skeleton
-		```
+  ```
+  composer create-project innocode-digital/wp-project-skeleton
+  ```
 
 - Create new project on [GitHub](https://github.com/) from
-	[this template](https://github.com/innocode-digital/wp-project-skeleton).
+  [this template](https://github.com/innocode-digital/wp-project-skeleton).
 
 - Alternative way is to clone this repo:
-		```
-		git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
-		```
+  ```
+  git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
+  ```
 
 Find `@TODO: ...` in code and replace with needed settings.
 
