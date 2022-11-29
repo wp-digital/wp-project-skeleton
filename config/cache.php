@@ -112,9 +112,25 @@ if ( Env::get( 'WP_CACHE' ) ) {
 			'utm_content',
 			'utm_campaign',
 		],
-		// @TODO: Uncomment when you need to use different versions of content for real users vs bots, e.g. for Prerender.
-		// 'unique'             => [
-		// 'crawler' => ( new CrawlerDetect() )->isCrawler(),
-		// ],
 	];
+
+	if ( Helpers::is_aws_lambda_critical_css_enabled() ) {
+		foreach ( array_keys( $_COOKIE ) as $name ) {
+			if ( strpos( $name, 'innocode_critical_css_' ) === 0 ) {
+				if ( ! isset( $GLOBALS['batcache']['unique'] ) ) {
+					$GLOBALS['batcache']['unique'] = [];
+				}
+
+				$GLOBALS['batcache']['unique']['innocode_critical_css'] = substr( $name, strlen( 'innocode_critical_css_' ) );
+			}
+		}
+	}
+
+	if ( Helpers::is_aws_lambda_prerender_enabled() && class_exists( 'CrawlerDetect' ) ) {
+		if ( ! isset( $GLOBALS['batcache']['unique'] ) ) {
+			$GLOBALS['batcache']['unique'] = [];
+		}
+
+		$GLOBALS['batcache']['unique']['crawler'] = ( new CrawlerDetect() )->isCrawler();
+	}
 }

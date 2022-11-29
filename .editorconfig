@@ -8,11 +8,7 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{js,jsx,ts,tsx,json}]
-indent_style = space
-indent_size = 2
-
-[*.yml]
+[*.{js,jsx,ts,tsx,json,babelrc,prettierrc,yml}]
 indent_style = space
 indent_size = 2
 

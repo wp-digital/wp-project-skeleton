@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.247.1",
+            "version": "3.249.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "337e447997148b9e5024c2d0ae69618b1cbf80d6"
+                "reference": "ec9108e2540167cbd7a524031a4b31b6fc0d857d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/337e447997148b9e5024c2d0ae69618b1cbf80d6",
-                "reference": "337e447997148b9e5024c2d0ae69618b1cbf80d6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec9108e2540167cbd7a524031a4b31b6fc0d857d",
+                "reference": "ec9108e2540167cbd7a524031a4b31b6fc0d857d",
                 "shasum": ""
             },
             "require": {
@@ -177,9 +177,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.247.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.249.0"
             },
-            "time": "2022-11-22T19:23:34+00:00"
+            "time": "2022-11-29T04:55:41+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -997,16 +997,16 @@
         },
         {
             "name": "humanmade/s3-uploads",
-            "version": "3.0.4",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/humanmade/S3-Uploads.git",
-                "reference": "8ad534d49c0307dd7ee56f0ab6d18c478f83a34a"
+                "reference": "1f3a7a29ef93370ae0400cad748fb0877707d225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/8ad534d49c0307dd7ee56f0ab6d18c478f83a34a",
-                "reference": "8ad534d49c0307dd7ee56f0ab6d18c478f83a34a",
+                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/1f3a7a29ef93370ae0400cad748fb0877707d225",
+                "reference": "1f3a7a29ef93370ae0400cad748fb0877707d225",
                 "shasum": ""
             },
             "require": {
@@ -1044,7 +1044,7 @@
                 "issues": "https://github.com/humanmade/s3-uploads/issues",
                 "source": "https://github.com/humanmade/s3-uploads"
             },
-            "time": "2022-03-02T11:59:49+00:00"
+            "time": "2022-11-29T09:34:07+00:00"
         },
         {
             "name": "innocode-digital/wp-assets-version",
@@ -1238,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocode-digital/wp-config.git",
-                "reference": "a3cd709e1445f179093cdb0690c27d3db17bf2b9"
+                "reference": "87a919974c56a400249f7f1f9e3cb81736962a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/a3cd709e1445f179093cdb0690c27d3db17bf2b9",
-                "reference": "a3cd709e1445f179093cdb0690c27d3db17bf2b9",
+                "url": "https://api.github.com/repos/innocode-digital/wp-config/zipball/87a919974c56a400249f7f1f9e3cb81736962a9d",
+                "reference": "87a919974c56a400249f7f1f9e3cb81736962a9d",
                 "shasum": ""
             },
             "require": {
@@ -1264,9 +1264,9 @@
             "description": "Library for WordPress configuration.",
             "support": {
                 "issues": "https://github.com/innocode-digital/wp-config/issues",
-                "source": "https://github.com/innocode-digital/wp-config/tree/1.9.0"
+                "source": "https://github.com/innocode-digital/wp-config/tree/1.10.0"
             },
-            "time": "2022-05-15T20:07:43+00:00"
+            "time": "2022-11-29T14:01:31+00:00"
         },
         {
             "name": "innocode-digital/wp-deferred-loading",
@@ -3092,15 +3092,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "19.10",
+            "version": "19.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/19.10"
+                "reference": "tags/19.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.10.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.11.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -3110,15 +3110,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.14.0"
+                "reference": "tags/1.15.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.14.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.15.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
