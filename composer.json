@@ -11,7 +11,8 @@
       "johnpbloch/wordpress-core-installer": true,
       "koodimonni/composer-dropin-installer": true,
       "boxuk/wp-muplugin-loader": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": true
     }
   },
   "minimum-stability": "dev",
@@ -35,6 +36,7 @@
     "automattic/batcache": "dev-master",
     "boxuk/wp-muplugin-loader": "^2.0",
     "humanmade/s3-uploads": "^3.0",
+    "innocode-digital/inncognito": "dev-main",
     "innocode-digital/wp-assets-version": "dev-main",
     "innocode-digital/wp-batcache-helper": "dev-main",
     "innocode-digital/wp-bugnag-fe": "dev-main",
@@ -44,7 +46,6 @@
     "innocode-digital/wp-flush-cache": "dev-master",
     "innocode-digital/wp-force-non-public": "dev-main",
     "innocode-digital/wp-image-editor-aws-lambda": "dev-master",
-    "innocode-digital/wp-inncognito": "dev-main",
     "innocode-digital/wp-mail-helpers": "dev-master",
     "innocode-digital/wp-mailgun-email-validation": "dev-master",
     "innocode-digital/wp-normalize": "dev-master",
