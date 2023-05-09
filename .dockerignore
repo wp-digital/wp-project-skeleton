@@ -1,0 +1,23 @@
+# Kubernetes
+kube/
+
+# Helm
+helm/
+
+# dotenv example environment variables file
+.env.example
+
+# gitignore
+.gitignore
+
+# Docker file
+Dockerfile
+
+# Jenkins Pipeline
+Jenkinsfile
+
+# README
+README.md
+
+# Git
+.git/

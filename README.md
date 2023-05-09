@@ -2,7 +2,7 @@
 
 ### Description
 
-[Innocode](https://innocode.com/) starter code for a WordPress project.
+[SMFB Dinamo](https://www.smfb-dinamo.com/) starter code for a WordPress project.
 
 ### Install
 
@@ -10,15 +10,15 @@ There are few possible options to use this skeleton:
 
 - Create new project with [Composer](https://getcomposer.org/):
   ```
-  composer create-project innocode-digital/wp-project-skeleton
+  composer create-project wp-digital/wp-project-skeleton
   ```
 
 - Create new project on [GitHub](https://github.com/) from
-  [this template](https://github.com/innocode-digital/wp-project-skeleton).
+  [this template](https://github.com/wp-digital/wp-project-skeleton).
 
 - Alternative way is to clone this repo:
   ```
-  git clone git@github.com:innocode-digital/wp-project-skeleton.git <name>
+  git clone git@github.com:wp-digital/wp-project-skeleton.git <name>
   ```
 
 Find `@TODO: ...` in code and replace with needed settings.
@@ -31,7 +31,7 @@ Manage dependencies with Composer. To install e.g. plugins use:
 
 ```
 composer require innocode-digital/wp-hybrid-lazy-loading
-composer require innocode-digital/wp-crontrol
+composer require wpackagist-plugin/wp-crontrol
 ```
 
 #### Update WordPress core, plugins, mu-plugins, PHP packages
@@ -55,13 +55,6 @@ then it's possible to initialize `.env` with next command:
 
 ```
 composer run-script wp-init
-```
-
-To install [wp-theme-skeleton](https://github.com/innocode-digital/wp-theme-skeleton) run:
-
-```
-composer run-script wp-scaffold-theme <slug>
-composer dump-autoload
 ```
 
 If you want to install some theme as dependency then remember

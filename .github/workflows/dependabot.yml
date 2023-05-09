@@ -1,0 +1,27 @@
+version: 2
+
+updates:
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    allow:
+      - dependency-name: johnpbloch/*
+      - dependency-name: koodimonni*
+      - dependency-name: meta-box/*
+      - dependency-name: wpackagist-plugin/*
+      - dependency-type: production
+
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    allow:
+      - dependency-name: johnpbloch/*
+      - dependency-name: koodimonni*
+      - dependency-name: meta-box/*
+      - dependency-name: wpackagist-plugin/*
+      - dependency-type: production
+    target-branch: stage

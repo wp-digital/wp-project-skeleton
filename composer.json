@@ -1,6 +1,6 @@
 {
-  "name": "innocode-digital/wp-project-skeleton",
-  "description": "Innocode project skeleton.",
+  "name": "wp-digital/wp-project-skeleton",
+  "description": "WPD project skeleton.",
   "type": "project",
   "license": "proprietary",
   "config": {
@@ -39,7 +39,7 @@
     "innocode-digital/inncognito": "dev-main",
     "innocode-digital/wp-assets-version": "dev-main",
     "innocode-digital/wp-batcache-helper": "dev-main",
-    "innocode-digital/wp-bugnag-fe": "dev-main",
+    "innocode-digital/wp-bugsnag-fe": "dev-main",
     "innocode-digital/wp-cdn": "dev-master",
     "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",
@@ -52,11 +52,11 @@
     "innocode-digital/wp-recaptcha": "dev-master",
     "innocode-digital/wp-simple-opcache-status": "dev-main",
     "innocode-digital/wp-theme-assets": "dev-master",
-    "innocode-digital/wp-theme-module": "dev-master",
     "johnpbloch/wordpress": "*",
     "koodimonni-language/core-nb_no": "*",
     "koodimonni/composer-dropin-installer": "*",
     "meta-box/mb-revision": "dev-master",
+    "wp-digital/wp-theme-module": "dev-master",
     "wpackagist-plugin/bugsnag": "*",
     "wpackagist-plugin/disable-comments": "*",
     "wpackagist-plugin/disable-xml-rpc": "*",
@@ -68,9 +68,7 @@
     "wpackagist-plugin/wp-newrelic": "*"
   },
   "require-dev": {
-    "aaemnnosttv/wp-cli-dotenv-command": "^2.0",
     "innocode-digital/php-cs": "^1.0",
-    "innocode-digital/wp-cli-scaffold-theme-command": "dev-master",
     "squizlabs/php_codesniffer": "^3.7"
   },
   "extra": {
@@ -116,7 +114,6 @@
   "scripts": {
     "wp": "vendor/bin/wp",
     "wp-init": "@wp dotenv init --template=.env.example --with-salts",
-    "wp-scaffold-theme": "@wp scaffold theme --force --skip-env --skip-install-notice",
     "phpcs": "vendor/bin/phpcs --standard=phpcs.xml",
     "phpcbf": "vendor/bin/phpcbf --standard=phpcs.xml",
     "check-cs": "@phpcs",
@@ -125,9 +122,9 @@
   },
   "authors": [
     {
-      "name": "Innocode",
-      "email": "post@innocode.no",
-      "homepage": "https://innocode.com/"
+      "name": "SMFB Dinamo",
+      "email": "post@smfb-dinamo.com",
+      "homepage": "https://www.smfb-dinamo.com/"
     },
     {
       "name": "Viktor Kuliebiakin",

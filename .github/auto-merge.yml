@@ -1,0 +1,19 @@
+- match:
+    dependency_name: johnpbloch/*
+    dependency_type: production
+    update_type: semver:minor
+
+- match:
+    dependency_name: koodimonni*
+    dependency_type: production
+    update_type: semver:minor
+
+- match:
+    dependency_name: meta-box/*
+    dependency_type: production
+    update_type: semver:minor
+
+- match:
+    dependency_name: wpackagist-plugin/*
+    dependency_type: production
+    update_type: semver:patch
