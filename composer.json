@@ -29,6 +29,17 @@
     {
       "type": "vcs",
       "url": "https://github.com/Automattic/batcache"
+    },
+    {
+      "type": "composer",
+      "url": "https://my.yoast.com/packages/",
+      "only": [
+        "yoast/wordpress-seo-premium",
+        "yoast/wordpress-seo-local",
+        "yoast/wpseo-video",
+        "yoast/wpseo-woocommerce",
+        "yoast/yoast-news-seo"
+      ]
     }
   ],
   "require": {
@@ -41,7 +52,6 @@
     "innocode-digital/wp-batcache-helper": "dev-main",
     "innocode-digital/wp-bugsnag-fe": "dev-main",
     "innocode-digital/wp-cdn": "dev-master",
-    "innocode-digital/wp-config": "dev-master",
     "innocode-digital/wp-deferred-loading": "dev-master",
     "innocode-digital/wp-flush-cache": "dev-master",
     "innocode-digital/wp-force-non-public": "dev-main",
@@ -56,6 +66,8 @@
     "koodimonni-language/core-nb_no": "*",
     "koodimonni/composer-dropin-installer": "*",
     "meta-box/mb-revision": "dev-master",
+    "wp-digital/innstats": "dev-main",
+    "wp-digital/wp-config": "dev-master",
     "wp-digital/wp-theme-module": "dev-master",
     "wpackagist-plugin/bugsnag": "*",
     "wpackagist-plugin/disable-comments": "*",

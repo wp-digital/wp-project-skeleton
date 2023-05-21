@@ -1,8 +1,17 @@
-# Kubernetes
-kube/
+# Git
+.git/
+
+# Github
+.github/
 
 # Helm
 helm/
+
+# Kubernetes
+kube/
+
+# Editor configuration
+.editorconfig
 
 # dotenv example environment variables file
 .env.example
@@ -16,8 +25,8 @@ Dockerfile
 # Jenkins Pipeline
 Jenkinsfile
 
+# PHP Code Sniffer
+phpcs.xml
+
 # README
 README.md
-
-# Git
-.git/
