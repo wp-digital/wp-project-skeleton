@@ -3,15 +3,15 @@ name: "Issue"
 about: "Template for new issue"
 title: "[Page / Place / Section / Functionality name]"
 labels: "development / enhancement"
-assignees: ''
+assignees: ""
 ---
-P.S. If object or function that should be implement or change displayed on adaptive or mobile version please add this to title ex.: [Main page, mobile] 
+P.S. If object or function that should be implemented or changed appears on adaptive or mobile version, please add this to title ex.: [Main page, mobile] 
 
 Task body:
 ---
 **Link:** PM or Developer or QA, add the link to the page if it's possible.
 
-**Description:** PM, Developer or QA provide clear information about potential innovations or changes + add information about the expected goal.
+**Description:** PM, Developer or QA, provide clear information about potential innovations or changes + add information about the expected goal.
 
 **Steps to achieve (if needed):**
 1. Go to the page or place on the page...
