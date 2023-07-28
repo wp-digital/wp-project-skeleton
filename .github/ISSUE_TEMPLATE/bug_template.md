@@ -13,7 +13,7 @@ Task body:
 
 **Description:** PM, Developer or QA, provide clear information about potential problems.
 
-**System info:** Add information about the device / OS + version / browser + version / screen size OR use a service like this https://www.whatismybrowser.com/
+**System info:** Add information about the device / OS + version / browser + version / screen size OR use a service like this https://www.whatismybrowser.com/.
 
 ex.: Iphone 13 mini, IOS 15, Chrome 147, 375 * 667 px
 
