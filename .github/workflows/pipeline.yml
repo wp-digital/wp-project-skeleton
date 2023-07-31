@@ -1,0 +1,182 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - stage
+  workflow_dispatch:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+
+env:
+  K8S_NAMESPACE: ${{ github.event.repository.name }}-${{ github.ref_name == 'main' && 'prod' || 'stage' }}
+  HELM_CHART: https://github.com/wp-digital/helm-charts/releases/download/wp-project-skeleton-0.5.9/wp-project-skeleton-0.5.9.tgz
+  IMAGE_TAG: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}-${{ github.sha }}
+
+jobs:
+  deployment:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ vars.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Setup Kubectl
+        uses: azure/k8s-set-context@v3
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          context: ${{ vars.KUBECONTEXT }}
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build, tag, and push image to Amazon ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ github.repository }}
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+          NEWRELIC_LICENSE: ${{ secrets.NEWRELIC_LICENSE }}
+          METABOX_API_KEY: ${{ secrets.METABOX_API_KEY }}
+          YOAST_TOKEN: ${{ secrets.YOAST_TOKEN }}
+          WP_PLUGIN_GF_KEY: ${{ secrets.WP_PLUGIN_GF_KEY }}
+          COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
+        run: |
+          # Build a docker container and push it to ECR so that it can be deployed to ECS.
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG . \
+            --build-arg NEWRELIC_LICENSE=$NEWRELIC_LICENSE \
+            --build-arg METABOX_API_KEY=$METABOX_API_KEY \
+            --build-arg YOAST_TOKEN=$YOAST_TOKEN \
+            --build-arg WP_PLUGIN_GF_KEY=$WP_PLUGIN_GF_KEY \
+            --build-arg COMPOSER_TOKEN=$COMPOSER_TOKEN
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+      - name: Create the Secret
+        run: |
+          cat <<'EOF' > secret.yaml
+          apiVersion: v1
+          kind: Secret
+          metadata:
+            name: ${{ env.K8S_NAMESPACE }}-wp-project-skeleton-secret
+            namespace: ${{ env.K8S_NAMESPACE }}
+          type: Opaque
+          stringData:
+            DB_HOST: '${{ vars.DB_HOST }}'
+            DB_PASSWORD: '${{ secrets.DB_PASSWORD }}'
+            S3_UPLOADS_KEY: '${{ vars.S3_UPLOADS_KEY }}'
+            S3_UPLOADS_SECRET: '${{ secrets.S3_UPLOADS_SECRET }}'
+            MAILGUN_APIKEY: '${{ secrets.MAILGUN_APIKEY }}'
+            MAILGUN_DOMAIN: '${{ vars.MAILGUN_DOMAIN }}'
+            MAILGUN_FROM_ADDRESS: '${{ vars.MAILGUN_FROM_ADDRESS }}'
+            BUGSNAG_API_KEY: '${{ secrets.BUGSNAG_API_KEY }}'
+            BUGSNAG_FE_API_KEY: '${{ secrets.BUGSNAG_FE_API_KEY }}'
+            RECAPTCHA_KEY: '${{ secrets.RECAPTCHA_KEY }}'
+            RECAPTCHA_SECRET: '${{ secrets.RECAPTCHA_SECRET }}'
+            INNCOGNITO_CLIENT_ID: '${{ vars.INNCOGNITO_CLIENT_ID }}'
+            INNCOGNITO_CLIENT_SECRET: '${{ secrets.INNCOGNITO_CLIENT_SECRET }}'
+            INNCOGNITO_USER_POOL_ID: '${{ vars.INNCOGNITO_USER_POOL_ID }}'
+            AWS_LAMBDA_IMAGE_KEY: '${{ vars.AWS_LAMBDA_IMAGE_KEY }}'
+            AWS_LAMBDA_IMAGE_SECRET: '${{ secrets.AWS_LAMBDA_IMAGE_SECRET }}'
+            AWS_LAMBDA_CRITICAL_CSS_KEY: '${{ vars.AWS_LAMBDA_CRITICAL_CSS_KEY }}'
+            AWS_LAMBDA_CRITICAL_CSS_SECRET: '${{ secrets.AWS_LAMBDA_CRITICAL_CSS_SECRET }}'
+            AWS_LAMBDA_PRERENDER_KEY: '${{ vars.AWS_LAMBDA_PRERENDER_KEY }}'
+            AWS_LAMBDA_PRERENDER_SECRET: '${{ secrets.AWS_LAMBDA_PRERENDER_SECRET }}'
+            INSTAGRAM_CLIENT_ID: '${{ vars.INSTAGRAM_CLIENT_ID }}'
+            INSTAGRAM_CLIENT_SECRET: '${{ secrets.INSTAGRAM_CLIENT_SECRET }}'
+            PLAUSIBLE_API_ROOT: '${{ vars.PLAUSIBLE_API_ROOT }}'
+            PLAUSIBLE_API_KEY: '${{ secrets.PLAUSIBLE_API_KEY }}'
+            PLAUSIBLE_SITES_API_KEY: '${{ secrets.PLAUSIBLE_SITES_API_KEY }}'
+          EOF
+
+      - name: Apply the Secret
+        run: |
+          kubectl apply -f ./secret.yaml
+
+      - name: Create Production Values
+        run: |
+          cat <<'EOF' > values.production.yaml
+          image:
+            registry: ${{ steps.login-ecr.outputs.registry }}
+            repository: ${{ github.repository }}
+            tag: prod-${{ github.sha }}
+          replicaCount: 2
+          ingress:
+            hostname: ${{ github.event.repository.name }}.${{ vars.INTERNAL_DOMAIN }}
+          autoscaling:
+            minReplicas: 2
+          newrelic-php-agent:
+            replicaCount: 2
+          app:
+            authKey: '${{ vars.AUTH_KEY }}'
+            secureAuthKey: '${{ vars.SECURE_AUTH_KEY }}'
+            loggedInKey: '${{ vars.LOGGED_IN_KEY }}'
+            nonceKey: '${{ vars.NONCE_KEY }}'
+            authSalt: '${{ vars.AUTH_SALT }}'
+            secureAuthSalt: '${{ vars.SECURE_AUTH_SALT }}'
+            loggedInSalt: '${{ vars.LOGGED_IN_SALT }}'
+            nonceSalt: '${{ vars.NONCE_SALT }}'
+            mailFromName: '${{ vars.MAIL_FROM_NAME }}'
+            awsRegion: '${{ vars.AWS_REGION }}'
+            inncognitoDomain: '${{ vars.INNCOGNITO_DOMAIN }}'
+            inncognitoRedirectUri: '${{ vars.INNCOGNITO_REDIRECT_URI }}'
+          env:
+            INNSTATS_PLAN: 'free'
+            PINGDOM_TOKEN: '${{ secrets.PINGDOM_API_TOKEN }}'
+            PINGDOM_PROJECT: '${{ github.event.repository.name }}'
+            UPTIME_STATUS_PAGE: '${{ vars.UPTIME_STATUS_PAGE }}'
+          EOF
+
+      - name: Create Staging Values
+        run: |
+          cat <<'EOF' > values.staging.yaml
+          image:
+            registry: ${{ steps.login-ecr.outputs.registry }}
+            repository: ${{ github.repository }}
+            tag: stage-${{ github.sha }}
+          ingress:
+            hostname: ${{ github.event.repository.name }}-stage.${{ vars.INTERNAL_DOMAIN }}
+          app:
+            environment: 'staging'
+            authKey: '${{ vars.AUTH_KEY }}'
+            secureAuthKey: '${{ vars.SECURE_AUTH_KEY }}'
+            loggedInKey: '${{ vars.LOGGED_IN_KEY }}'
+            nonceKey: '${{ vars.NONCE_KEY }}'
+            authSalt: '${{ vars.AUTH_SALT }}'
+            secureAuthSalt: '${{ vars.SECURE_AUTH_SALT }}'
+            loggedInSalt: '${{ vars.LOGGED_IN_SALT }}'
+            nonceSalt: '${{ vars.NONCE_SALT }}'
+            mailFromName: '${{ vars.MAIL_FROM_NAME }}'
+            awsRegion: '${{ vars.AWS_REGION }}'
+            inncognitoDomain: '${{ vars.INNCOGNITO_DOMAIN }}'
+            inncognitoRedirectUri: '${{ vars.INNCOGNITO_REDIRECT_URI }}'
+          EOF
+
+      - name: Deploy Helm
+        run: |
+          helm upgrade ${{ env.K8S_NAMESPACE }} ${{ env.HELM_CHART }} \
+            --install \
+            --wait \
+            --namespace ${{ env.K8S_NAMESPACE }} \
+            --set=app.name=${{ github.event.repository.name }} \
+            --set=app.version=${{ env.IMAGE_TAG }} \
+            --atomic \
+            --timeout=600s \
+            --values=./values.${{ github.ref_name == 'main' && 'production' || 'staging' }}.yaml

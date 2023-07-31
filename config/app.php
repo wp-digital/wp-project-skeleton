@@ -27,3 +27,15 @@ if ( Env::get( 'FORCE_NON_PUBLIC' ) || ENVIRONMENT !== 'production' ) {
 if ( ! Env::get( 'USE_WP_CRON' ) ) {
 	define( 'DISABLE_WP_CRON', 'true' );
 }
+
+if ( Env::get( 'PINGDOM_TOKEN' ) ) {
+	define( 'PINGDOM_TOKEN', Env::get( 'PINGDOM_TOKEN' ) );
+
+	if ( Env::get( 'PINGDOM_PROJECT' ) ) {
+		define( 'PINGDOM_PROJECT', Env::get( 'PINGDOM_PROJECT' ) );
+	}
+}
+
+if ( Env::get( 'UPTIME_STATUS_PAGE' ) ) {
+	define( 'UPTIME_STATUS_PAGE', Env::get( 'UPTIME_STATUS_PAGE' ) );
+}
