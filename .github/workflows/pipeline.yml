@@ -119,7 +119,7 @@ jobs:
             tag: prod-${{ github.sha }}
           replicaCount: 2
           ingress:
-            hostname: ${{ github.event.repository.name }}.wpd.digital
+            hostname: ${{ github.event.repository.name }}.${{ vars.INTERNAL_DOMAIN }}
           autoscaling:
             minReplicas: 2
           newrelic-php-agent:
@@ -152,7 +152,7 @@ jobs:
             repository: ${{ github.repository }}
             tag: stage-${{ github.sha }}
           ingress:
-            hostname: ${{ github.event.repository.name }}-stage.wpd.digital
+            hostname: ${{ github.event.repository.name }}-stage.${{ vars.INTERNAL_DOMAIN }}
           app:
             environment: 'staging'
             authKey: '${{ vars.AUTH_KEY }}'
