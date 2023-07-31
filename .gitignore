@@ -30,3 +30,8 @@ public/wp-content/*
 public/wp-content/plugins/*
 !public/wp-content/plugins/index.php
 !public/wp-content/themes/
+
+.htaccess
+
+# Secrets
+secrets/

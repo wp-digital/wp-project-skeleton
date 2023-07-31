@@ -30,3 +30,6 @@ phpcs.xml
 
 # README
 README.md
+
+# Secrets
+secrets/
