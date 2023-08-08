@@ -1,7 +1,7 @@
 ---
 name: "Bug"
 about: "Template for potential problem / bug"
-title: "[Page / Place / Section / Functionality name]"
+title: "[Page / Template / Section / Functionality name]"
 labels: "bug"
 assignees: ''
 ---

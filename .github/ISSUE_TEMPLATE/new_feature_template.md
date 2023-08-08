@@ -1,7 +1,7 @@
 ---
-name: "Issue"
+name: "New feature"
 about: "Template for new issue"
-title: "[Page / Place / Section / Functionality name]"
+title: "[Page / Template / Section / Functionality name]"
 labels: "development / enhancement"
 assignees: ""
 ---
