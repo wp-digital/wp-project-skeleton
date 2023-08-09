@@ -93,16 +93,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.277.4",
+            "version": "3.277.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9f36e76a3e1f8c7eba8cacbfa1d5f1257cd04241"
+                "reference": "2f7c7f7d4c949469eca4e4c18fb5646aafb0375c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9f36e76a3e1f8c7eba8cacbfa1d5f1257cd04241",
-                "reference": "9f36e76a3e1f8c7eba8cacbfa1d5f1257cd04241",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2f7c7f7d4c949469eca4e4c18fb5646aafb0375c",
+                "reference": "2f7c7f7d4c949469eca4e4c18fb5646aafb0375c",
                 "shasum": ""
             },
             "require": {
@@ -182,9 +182,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.277.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.277.12"
             },
-            "time": "2023-07-28T22:10:53+00:00"
+            "time": "2023-08-09T18:09:09+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -242,16 +242,16 @@
         },
         {
             "name": "boxuk/wp-muplugin-loader",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/boxuk/wp-muplugin-loader.git",
-                "reference": "e345a7d9a043f64afa89ce7355bb9a2ac4431ddb"
+                "reference": "1d3029dffd1b2bbbd3fbc9a77aa84bb2b1d60f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boxuk/wp-muplugin-loader/zipball/e345a7d9a043f64afa89ce7355bb9a2ac4431ddb",
-                "reference": "e345a7d9a043f64afa89ce7355bb9a2ac4431ddb",
+                "url": "https://api.github.com/repos/boxuk/wp-muplugin-loader/zipball/1d3029dffd1b2bbbd3fbc9a77aa84bb2b1d60f41",
+                "reference": "1d3029dffd1b2bbbd3fbc9a77aa84bb2b1d60f41",
                 "shasum": ""
             },
             "require": {
@@ -260,12 +260,12 @@
                 "php": "^7.4 || ^8.0 || ^8.1 || ^8.2"
             },
             "require-dev": {
-                "10up/wp_mock": "^0.5",
+                "10up/wp_mock": "^1.0",
                 "composer/composer": "^1.10 || ^2.0",
-                "composer/pcre": "^2.0",
+                "composer/pcre": "^3.1",
                 "mockery/mockery": "~1.3",
                 "phpunit/phpunit": "^9",
-                "psr/container": "1.1.1"
+                "psr/container": "1.1.2"
             },
             "type": "composer-plugin",
             "extra": {
@@ -304,9 +304,9 @@
             ],
             "support": {
                 "issues": "https://github.com/boxuk/wp-muplugin-loader/issues",
-                "source": "https://github.com/boxuk/wp-muplugin-loader/tree/2.1.0"
+                "source": "https://github.com/boxuk/wp-muplugin-loader/tree/2.2.0"
             },
-            "time": "2023-05-19T09:07:04+00:00"
+            "time": "2023-08-03T15:23:10+00:00"
         },
         {
             "name": "composer/installers",
@@ -906,16 +906,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6"
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/b635f279edd83fc275f822a1188157ffea568ff6",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/8bd7c33a0734ae1c5d074360512beb716bef3f77",
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1002,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.5.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.6.0"
             },
             "funding": [
                 {
@@ -1018,7 +1018,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-17T16:11:26+00:00"
+            "time": "2023-08-03T15:06:02+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -1940,10 +1940,10 @@
         },
         {
             "name": "koodimonni-language/core-nb_no",
-            "version": "6.2.2",
+            "version": "6.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/6.2.2/nb_NO.zip"
+                "url": "https://downloads.wordpress.org/translation/core/6.3/nb_NO.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -2967,12 +2967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-digital/wp-start-up.git",
-                "reference": "f3d1814bf3d22d0e97a5068a08a089c9640ccd80"
+                "reference": "f429223a01510f8ebb60621855fb5b4b34a67cd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-digital/wp-start-up/zipball/f3d1814bf3d22d0e97a5068a08a089c9640ccd80",
-                "reference": "f3d1814bf3d22d0e97a5068a08a089c9640ccd80",
+                "url": "https://api.github.com/repos/wp-digital/wp-start-up/zipball/f429223a01510f8ebb60621855fb5b4b34a67cd0",
+                "reference": "f429223a01510f8ebb60621855fb5b4b34a67cd0",
                 "shasum": ""
             },
             "require": {
@@ -3023,7 +3023,7 @@
                 "issues": "https://github.com/wp-digital/wp-start-up/issues",
                 "source": "https://github.com/wp-digital/wp-start-up/tree/main"
             },
-            "time": "2023-07-27T09:19:04+00:00"
+            "time": "2023-08-02T13:32:07+00:00"
         },
         {
             "name": "wp-digital/wp-theme-module",
@@ -3228,15 +3228,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "20.12",
+            "version": "20.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/20.12"
+                "reference": "tags/20.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.20.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.20.13.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -3709,16 +3709,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.23.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494"
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/a2b24135c35852b348894320d47b3902a94bc494",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
                 "shasum": ""
             },
             "require": {
@@ -3750,9 +3750,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
             },
-            "time": "2023-07-23T22:17:56+00:00"
+            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "slevomat/coding-standard",
