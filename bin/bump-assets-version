@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+cd $(dirname $(dirname $(realpath "$0")))
+
+if $(wp option get innocode_assets_version &>/dev/null)
+then
+  VERSION=`wp eval "echo md5(time());" --skip-wordpress`
+  wp option update innocode_assets_version $VERSION
+fi
+
+wp cache flush

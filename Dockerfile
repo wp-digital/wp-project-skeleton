@@ -45,4 +45,5 @@ RUN echo "" > ./.env
 
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x ./bin/run-wp-cron
+RUN chmod +x ./bin/bump-assets-version
 RUN chown -R www-data:www-data ./
