@@ -13,7 +13,7 @@ concurrency:
 
 env:
   K8S_NAMESPACE: ${{ github.event.repository.name }}-${{ github.ref_name == 'main' && 'prod' || 'stage' }}
-  HELM_CHART: https://github.com/wp-digital/helm-charts/releases/download/wp-project-skeleton-0.5.9/wp-project-skeleton-0.5.9.tgz
+  HELM_CHART: https://github.com/wp-digital/helm-charts/releases/download/wp-project-skeleton-0.5.12/wp-project-skeleton-0.5.12.tgz
   IMAGE_TAG: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}-${{ github.sha }}
 
 jobs:
