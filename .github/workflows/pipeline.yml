@@ -14,7 +14,7 @@ concurrency:
 env:
   K8S_NAMESPACE: ${{ github.event.repository.name }}-${{ github.ref_name == 'main' && 'prod' || 'stage' }}
   HELM_CHART: https://github.com/wp-digital/helm-charts/releases/download/wp-project-skeleton-0.5.12/wp-project-skeleton-0.5.12.tgz
-  IMAGE_TAG: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}-${{ github.sha }}
+  IMAGE_TAG: ${{ github.ref_name == 'main' && 'prod' || 'stage' }}-${{ github.sha }}-${{ github.run_number }}
 
 jobs:
   deployment:
@@ -116,7 +116,7 @@ jobs:
           image:
             registry: ${{ steps.login-ecr.outputs.registry }}
             repository: ${{ github.repository }}
-            tag: prod-${{ github.sha }}
+            tag: prod-${{ github.sha }}-${{ github.run_number }}
           replicaCount: 2
           ingress:
             hostname: ${{ github.event.repository.name }}.${{ vars.INTERNAL_DOMAIN }}
@@ -150,7 +150,7 @@ jobs:
           image:
             registry: ${{ steps.login-ecr.outputs.registry }}
             repository: ${{ github.repository }}
-            tag: stage-${{ github.sha }}
+            tag: stage-${{ github.sha }}-${{ github.run_number }}
           ingress:
             hostname: ${{ github.event.repository.name }}-stage.${{ vars.INTERNAL_DOMAIN }}
           app:

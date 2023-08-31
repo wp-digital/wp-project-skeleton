@@ -39,3 +39,5 @@ if ( Env::get( 'PINGDOM_TOKEN' ) ) {
 if ( Env::get( 'UPTIME_STATUS_PAGE' ) ) {
 	define( 'UPTIME_STATUS_PAGE', Env::get( 'UPTIME_STATUS_PAGE' ) );
 }
+
+define( 'WP_NR_DISABLE_INSTALL_NOTICE', true );

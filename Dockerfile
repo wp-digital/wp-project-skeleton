@@ -44,6 +44,6 @@ RUN composer install -o -n --no-dev
 RUN echo "" > ./.env
 
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-RUN chmod +x ./bin/run-wp-cron
 RUN chmod +x ./bin/bump-assets-version
+RUN chmod +x ./bin/run-wp-cron
 RUN chown -R www-data:www-data ./
